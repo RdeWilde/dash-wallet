@@ -41,7 +41,6 @@ import org.bitcoinj.core.Block;
 import org.bitcoinj.core.BlockChain;
 import org.bitcoinj.core.CheckpointManager;
 import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.FilteredBlock;
 import org.bitcoinj.core.Peer;
 import org.bitcoinj.core.PeerEventListener;
 import org.bitcoinj.core.PeerGroup;
@@ -330,7 +329,7 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
 		private final AtomicLong lastMessageTime = new AtomicLong(0);
 
 		@Override
-		public void onBlocksDownloaded(final Peer peer, final Block block, final FilteredBlock filteredBlock, final int blocksLeft)
+		public void onBlocksDownloaded(final Peer peer, final Block block, /*final FilteredBlock filteredBlock,*/ final int blocksLeft)
 		{
 			config.maybeIncrementBestChainHeightEver(blockChain.getChainHead().getHeight());
 
@@ -675,7 +674,8 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
 				{
 					final long start = System.currentTimeMillis();
 					final InputStream checkpointsInputStream = getAssets().open(Constants.Files.CHECKPOINTS_FILENAME);
-					CheckpointManager.checkpoint(Constants.NETWORK_PARAMETERS, checkpointsInputStream, blockStore, earliestKeyCreationTime);
+					// TODO
+//					CheckpointManager.checkpoint(blockStore, Constants.NETWORK_PARAMETERS, checkpointsInputStream, earliestKeyCreationTime);
 					log.info("checkpoints loaded from '{}', took {}ms", Constants.Files.CHECKPOINTS_FILENAME, System.currentTimeMillis() - start);
 				}
 				catch (final IOException x)
@@ -801,12 +801,12 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
 
 		application.saveWallet();
 
-		//Dash Specific
+		//ION Specific
 
 		//Constants.NETWORK_PARAMETERS.masternodeDB.write(Constants.NETWORK_PARAMETERS.masternodeManager);
 		application.saveMasternodes();
 
-		//Dash Specific
+		//ION Specific
 
 		if (wakeLock.isHeld())
 		{

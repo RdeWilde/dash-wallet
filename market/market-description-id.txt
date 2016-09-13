@@ -1,19 +1,19 @@
-Dengan aplikasi ini Anda selalu mempunyai Dash dengan Anda, dalam saku Anda! Anda dapat mengirim pembayaran hanya dengan memindai kode-QR atau mendekatkan dua ponsel bersama (NFC). Dash Wallet dirancang untuk mudah digunakan dan diandalkan, sementara juga menjadi lebih aman dan cepat.
+Dengan aplikasi ini Anda selalu mempunyai ION dengan Anda, dalam saku Anda! Anda dapat mengirim pembayaran hanya dengan memindai kode-QR atau mendekatkan dua ponsel bersama (NFC). ION Wallet dirancang untuk mudah digunakan dan diandalkan, sementara juga menjadi lebih aman dan cepat.
 
 FITUR:
 
 • Tidak diperlukan server awan atau layanan web! Dompet ini benar-benar peer ke peer.
-• Tampilkan saldo dompet dalam Dash dan mata uang lainnya.
-• Mengirim dan menerima Dash via NFC, kode-QR atau Tautan Dash.
-• Buku alamat untuk alamat penggunaan Dash secara reguler.
+• Tampilkan saldo dompet dalam ION dan mata uang lainnya.
+• Mengirim dan menerima ION via NFC, kode-QR atau Tautan ION.
+• Buku alamat untuk alamat penggunaan ION secara reguler.
 • Masukkan transaksi saat offline, akan dilaksanakan ketika online.
-• Notifikasi sistem untuk konektivitas Dash dan menerima koin.
-• Widget Apl untuk saldo Dash.
+• Notifikasi sistem untuk konektivitas ION dan menerima koin.
+• Widget Apl untuk saldo ION.
 
-Anda dapat mengetahui lebih mengenai Dash di
+Anda dapat mengetahui lebih mengenai ION di
 http://darkcoin.io
 
-Jika Anda ingin berkontribusi kepada Dash Wallet, proyeknya berada di
+Jika Anda ingin berkontribusi kepada ION Wallet, proyeknya berada di
 https://github.com/HashEngineering/darkcoin-wallet
 
 Lisensi: GPLv3

@@ -1,22 +1,22 @@
-<b>Mějte své Dashy vždy s sebou ve své kapse!</b> Plaťte rychlým oskenováním QR kódu. A jako prodejce můžete přijímat platby spolehlivě a rychle. Dash Wallet je mobilní Dash aplikace číslo jedna a jedna z nejbezpečnějších!
+<b>Mějte své IONy vždy s sebou ve své kapse!</b> Plaťte rychlým oskenováním QR kódu. A jako prodejce můžete přijímat platby spolehlivě a rychle. ION Wallet je mobilní ION aplikace číslo jedna a jedna z nejbezpečnějších!
 
 
 <b>FUNKCE</b>
 
 • Žádná registrace, žádná webová služba ani cloud není potřeba! Tato peněženka je de-centralizovaná a peer to peer.
-• Zobrazení Dash částek v DASH, mDASH a µDASH.
+• Zobrazení ION částek v DASH, mDASH a µDASH.
 • Přepočet z a do národních měn.
-• Odesílání a přijímání plateb přes NFC, QR kódy nebo Dash URL.
-• Adresář pro často používané Dash adresy.
+• Odesílání a přijímání plateb přes NFC, QR kódy nebo ION URL.
+• Adresář pro často používané ION adresy.
 • Pokud jste offline, stále můžete platit přes Bluetooth.
 • Systémové notifikace při přijaté platbě
 • Načítání papírových peněženek (např. ty co se používají u cold storage).
-• Widget pro zobrazení Dash bilance.
+• Widget pro zobrazení ION bilance.
 
 
 <b>PŘISPĚJTE</b>
 
-Dash Wallet je <b>open source</b> a <b>svobodný software</b>. Licence: GPLv3
+ION Wallet je <b>open source</b> a <b>svobodný software</b>. Licence: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Náš zdrojový kód je k dispozici na GitHubu:
@@ -28,7 +28,7 @@ https://www.transifex.com/projects/p/bitcoin-wallet/
 
 <b>UZNÁNÍ</b>
 
-• Mnoho mobilních peněženek využívá zdrojový kód Dash Wallet. Například: blockchain.info, Hive a KnC.
+• Mnoho mobilních peněženek využívá zdrojový kód ION Wallet. Například: blockchain.info, Hive a KnC.
 • Doporučená mobilní peněženka stránkou https://bitcoin.org
 • Doporučeno službou BitPay.
 

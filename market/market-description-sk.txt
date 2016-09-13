@@ -1,20 +1,20 @@
-Dashy vždy so sebou vo svojom vrecku. Jednoduché a rýchle platby pomocou QR kódov. Pre obchodníkov ponúka spoľahlivé a okamžité prijímanie platieb. Dash Wallet je prvá mobilná Dash aplikácia a preukázateľne aj najbezpečnejšia.
+IONy vždy so sebou vo svojom vrecku. Jednoduché a rýchle platby pomocou QR kódov. Pre obchodníkov ponúka spoľahlivé a okamžité prijímanie platieb. ION Wallet je prvá mobilná ION aplikácia a preukázateľne aj najbezpečnejšia.
 
 FUNKCIE:
 
 • Nie je potrebná žiadna registrácia ani žiadny účet.
-• Zobrazenie zostatku Dashov v DASH alebo mDASH.
-• Prepočet hodnoty Dashov do viacerých cudzích mien.
-• Posielanie a prijímanie Dashov pomocou NFC, QR kódov alebo Dash adries.
-• Adresár pre často používané Dash adresy.
+• Zobrazenie zostatku IONov v DASH alebo mDASH.
+• Prepočet hodnoty IONov do viacerých cudzích mien.
+• Posielanie a prijímanie IONov pomocou NFC, QR kódov alebo ION adries.
+• Adresár pre často používané ION adresy.
 • V offline režime je platba možná aj cez Bluetooth.
-• Notifikácie v stavovej lište pri prijatí Dashov.
+• Notifikácie v stavovej lište pri prijatí IONov.
 • Widget s celkovým zostatkom.
 
-Viac informácií o Dashe
+Viac informácií o IONe
 http://darkcoin.io
 
-Ak chcete prispieť do projektu Dash Wallet nájdete ho na adrese
+Ak chcete prispieť do projektu ION Wallet nájdete ho na adrese
 https://github.com/HashEngineering/darkcoin-wallet
 
 Licencia: GPLv3

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<color name="colorPrimary">@color/strong_blue_new</color>
-	<color name="colorPrimaryDark">#1961a0</color>
-	<color name="colorAccent">#666666</color>
+	<color name="colorPrimary">@color/primary</color>
+	<color name="colorPrimaryDark">@color/secundary</color>
+	<color name="colorAccent">@color/support_turquase</color>
 
-	<color name="strong_blue_new">#367bbe</color>
-	<color name="strong_blue">#1c75bc</color>
-	<color name="dark_blue">#1e487c</color>
-	<color name="vivid_red">#ec2227</color>
+	<color name="primary">#00adf6</color>
+	<color name="secundary">#042d4b</color>
+	<color name="support1">#5e68a9</color>
+	<color name="support_turquase">#41dd94</color>
+	<color name="support_purple">#914ed1</color>
+	<color name="support_green">#56ce41</color>
 	<color name="white">#ffffff</color>
 
 	<color name="ripple_light">#40ffffff</color>
@@ -26,7 +28,7 @@
 	<!-- background -->
 	<color name="bg_bright">#ffffffff</color>
 	<color name="bg_less_bright">#ffe8e8f0</color>
-	<color name="bg_panel">#fff2f2f8</color>
+	<color name="bg_panel">#111111</color>
 	<color name="bg_form">@android:color/white</color>
 	<color name="bg_list">#40ffffff</color>
 	<color name="bg_list_selected">#40808090</color>

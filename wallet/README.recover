@@ -1,8 +1,8 @@
 PROLOGUE
 
-This document describes how you can use a backup file on a standard PC to recover your Dashs.
+This document describes how you can use a backup file on a standard PC to recover your IONs.
 Normally, this shouldn't be needed. It is much preferred to just use Options > Safety > Restore
-wallet from within the Dash Wallet app if you can. This guide is only meant for rare cases:
+wallet from within the ION Wallet app if you can. This guide is only meant for rare cases:
 
 - Your Android device is destroyed or missing and you do not want or cannot get a new Android
   device.
@@ -75,7 +75,7 @@ Historically there is two backup formats. Let's look at the first printable char
 
 	cat darkcoin-wallet-decrypted-backup | tr -cd "[:print:]" | awk '{print $1}'
 
-If it prints "org.darkcoin.production", you got the right password and the backup file uses the
+If it prints "org.ionomy.production", you got the right password and the backup file uses the
 darkcoinj protobuf format. This backup format was introduced in v3.47 (May 2014). Skip to
 RECOVERING FROM PROTOBUF WALLET FORMAT.
 

@@ -1,21 +1,21 @@
-<b>Porta i tuoi Dash sempre con te, in tasca!</b>  Paghi velocemente scansionando un QR-code. Come un commerciante, riceverai i pagamenti sicuri e istantanei. Dash Wallet è la prima Dash app mobile, e probabilmente anche la più sicura!
+<b>Porta i tuoi ION sempre con te, in tasca!</b>  Paghi velocemente scansionando un QR-code. Come un commerciante, riceverai i pagamenti sicuri e istantanei. ION Wallet è la prima ION app mobile, e probabilmente anche la più sicura!
 
 <b>CARATTERISTICHE</b>
 
 • Non è necessaria alcuna registrazione, servizio web o cloud! Questo portafoglio è de-centralizzato e peer to peer.
-• Mostra l'ammontare di Dash in DASH, mDASH e µDASH.
+• Mostra l'ammontare di ION in DASH, mDASH e µDASH.
 • Conversione verso e dalle monete nazionali.
-• Invio e ricevimento di Dash tramite NFC, codici QR o URL Dash.
-• Rubrica degli indirizzi per usare indirizzi Dash regolarmente.
+• Invio e ricevimento di ION tramite NFC, codici QR o URL ION.
+• Rubrica degli indirizzi per usare indirizzi ION regolarmente.
 • Quando sei offline, puoi comunque ancora pagare via Bluetooth.
 • Sistema di notifica per le monete ricevute.
 • Svuotamento di portafogli cartacei (es: quelli utilizzati come depositi offline)
-• App Widget per il saldo Dash
+• App Widget per il saldo ION
 
 
 <b>CONTRIBUISCI</b>
 
-Dash Wallet è <b>open source</b> e <b>software libero</b>. Licenza: GPLv3
+ION Wallet è <b>open source</b> e <b>software libero</b>. Licenza: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Il nostro codice sorgente è disponibile su GitHub
@@ -27,7 +27,7 @@ https://www.transifex.com/projects/p/bitcoin-wallet/
 
 <b>TESTIMONIANZE</b>
 
-• Molti portafogli mobile basano il loro codice basato su Dash Wallet. Esempi: blockchain.info, Hive e KnC.
+• Molti portafogli mobile basano il loro codice basato su ION Wallet. Esempi: blockchain.info, Hive e KnC.
 • Portafoglio mobile raccomandato da https://bitcoin.org
 • Raccomandato da BitPay.
 

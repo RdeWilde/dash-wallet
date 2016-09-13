@@ -6,8 +6,8 @@
 	android:versionCode="40039"
 	android:versionName="4.40.12L" >
 	<uses-sdk
-		android:minSdkVersion="15"
-		android:targetSdkVersion="16"
+		android:minSdkVersion="18"
+		android:targetSdkVersion="23"
 		tools:ignore="OldTargetApi" />
 
 	<uses-permission android:name="android.permission.INTERNET" />
@@ -198,7 +198,7 @@
 
 		<receiver
 			android:name="de.schildbach.wallet.WalletBalanceWidgetProvider"
-			android:label="Dash Wallet Balance" >
+			android:label="ION Wallet Balance" >
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>

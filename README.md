@@ -1,4 +1,4 @@
-Welcome to _Dash Wallet_, a standalone Dash payment app for your Android device!
+Welcome to _ION Wallet_, a standalone ION payment app for your Android device!
 
 This project contains several sub-projects:
 
@@ -7,7 +7,7 @@ This project contains several sub-projects:
  * __market__:
      App description and promo material for the Google Play app store.
  * __integration-android__:
-     A tiny library for integrating Dash payments into your own Android app
+     A tiny library for integrating ION payments into your own Android app
      (e.g. donations, in-app purchases).
  * __sample-integration-android__:
      A minimal example app to demonstrate integration of digital payments into

@@ -1,4 +1,4 @@
-<b>将比特币随身携带，在您的口袋中！</b> 扫描二维码快速支付，即时可靠的接收付款。比特币钱包 (Dash Wallet) 是首选的、最安全的比特币应用！
+<b>将比特币随身携带，在您的口袋中！</b> 扫描二维码快速支付，即时可靠的接收付款。比特币钱包 (ION Wallet) 是首选的、最安全的比特币应用！
 
 
 <b>功能</b>
@@ -15,7 +15,7 @@
 
 <b>贡献</b>
 
-Dash Wallet 是 <b>开源项目</b> 和 <b>自由软件</b>，以 GPLv3 授权。
+ION Wallet 是 <b>开源项目</b> 和 <b>自由软件</b>，以 GPLv3 授权。
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 源代码托管在 GitHub:
@@ -27,7 +27,7 @@ https://www.transifex.com/projects/p/bitcoin-wallet/
 
 <b>评价</b>
 
-• 很多的移动钱包应用程序都基于 Dash Wallet，比如：blockchain.info, Hive 以及 KnC.
+• 很多的移动钱包应用程序都基于 ION Wallet，比如：blockchain.info, Hive 以及 KnC.
 • 由 https://bitcoin.org 推荐的移动钱包。
 • 由 BitPay 推荐的移动钱包。
 

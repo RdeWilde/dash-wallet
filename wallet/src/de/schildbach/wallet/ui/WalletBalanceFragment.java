@@ -250,7 +250,7 @@ public final class WalletBalanceFragment extends Fragment
 			}
 
 			viewProgress.setVisibility(View.GONE);
-            //TODO:  Dash move to a better place
+            //TODO:  ION move to a better place
 			if(masternodeSyncStatus != MasternodeSync.MASTERNODE_SYNC_FINISHED)
 			{
 				viewProgress.setVisibility(View.VISIBLE);

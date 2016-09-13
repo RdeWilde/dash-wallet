@@ -7,11 +7,11 @@ dependencies {
     compile(project(':integration-android')) {
         exclude(group: 'com.google.android', module: 'android')
     }
-    compile 'org.bitcoinj:darkcoinj-core:0.13.2.rix'
+    compile 'org.bitcoinj:ionj-core:0.13.5'
 }
 
 android {
-    compileSdkVersion 'android-10'
+    compileSdkVersion 'android-18'
     buildToolsVersion '22.0.1'
 
     lintOptions { abortOnError false }

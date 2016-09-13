@@ -1,4 +1,4 @@
-讓你的比特幣只放在自己的口袋裡! 你可以利用QR二維條碼快速進行比特幣付款，商家可以更快速安全的完成比特幣請款，Dash Wallet 是第一個在移動裝置可以使用的比特幣 App，並自認為是最安全的比特幣 App!
+讓你的比特幣只放在自己的口袋裡! 你可以利用QR二維條碼快速進行比特幣付款，商家可以更快速安全的完成比特幣請款，ION Wallet 是第一個在移動裝置可以使用的比特幣 App，並自認為是最安全的比特幣 App!
 
 
 <b>功能</b>
@@ -16,7 +16,7 @@
 
 <b>貢獻</b>
 
-Dash Wallet is <b>open source</b> and <b>free software</b>. License: GPLv3
+ION Wallet is <b>open source</b> and <b>free software</b>. License: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Our source code is available at GitHub:

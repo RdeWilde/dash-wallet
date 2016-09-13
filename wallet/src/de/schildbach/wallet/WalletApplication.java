@@ -143,7 +143,7 @@ public class WalletApplication extends Application
 
 		loadWalletFromProtobuf();
 
-		//Dash Specific - TODO:  need to separate out these parts.
+		//ION Specific - TODO:  need to separate out these parts.
 		org.bitcoinj.core.Context context = wallet.getContext();
 
 		wallet.getContext().initDash(config.getLiteMode(), config.getInstantXEnabled());
@@ -561,7 +561,7 @@ public class WalletApplication extends Application
 
 	public static String httpUserAgent(final String versionName)
 	{
-		final VersionMessage versionMessage = new VersionMessage(Constants.NETWORK_PARAMETERS, 0);
+			final VersionMessage versionMessage = new VersionMessage(Constants.NETWORK_PARAMETERS, 0);
 		versionMessage.appendToSubVer(Constants.USER_AGENT, versionName, null);
 		return versionMessage.subVer;
 	}
@@ -607,7 +607,7 @@ public class WalletApplication extends Application
 	}
 
 	//dash Specific
-	public void updateDashMode()
+	public void updateIONMode()
 	{
 		org.bitcoinj.core.Context context = wallet.getContext();
 

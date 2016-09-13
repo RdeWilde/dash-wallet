@@ -1,22 +1,22 @@
-﻿<b>Hab deine Dash immer dabei, in deiner Hosentasche!</b> Du zahlst, indem du rasch einen QR-Code scannst. Als Händler empfängst du Zahlungen zuverlässig und sofort. Dash Wallet ist die erste mobile Dash app, und wohl auch die sicherste!
+﻿<b>Hab deine ION immer dabei, in deiner Hosentasche!</b> Du zahlst, indem du rasch einen QR-Code scannst. Als Händler empfängst du Zahlungen zuverlässig und sofort. ION Wallet ist die erste mobile ION app, und wohl auch die sicherste!
 
 
 <b>FEATURES</b>
 
 • Keine Registrierung, Web-Dienst oder Cloud nötig! Diese Wallet ist dezentral und Peer to Peer.
-• Anzeige von Dash-Werten in DASH, mDASH und µDASH.
+• Anzeige von ION-Werten in DASH, mDASH und µDASH.
 • Umrechnung von und zu den nationalen Währungen.
-• Senden und Empfangen von Dash via NFC, QR-Codes oder Dash URLs.
+• Senden und Empfangen von ION via NFC, QR-Codes oder ION URLs.
 • Adressbuch für regelmäßig genutzte Empfänger.
 • Wenn du offline bist, kannst du trotzdem über Bluetooth zahlen.
 • System-Benachrichtigung für den Empfang von Zahlungen.
 • Entleeren von Paper-Wallets (die z.B. für Cold-Storage genutzt wurden).
-• App-Widget zeigt Dash-Guthaben an.
+• App-Widget zeigt ION-Guthaben an.
 
 
 <b>MITWIRKEN</b>
 
-Dash Wallet ist <b>Open Source</b> und <b>Freie Software</b>. Lizenz: GPLv3
+ION Wallet ist <b>Open Source</b> und <b>Freie Software</b>. Lizenz: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.de.html
 
 Unser Source Code ist auf GitHub verfügbar:

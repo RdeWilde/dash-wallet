@@ -1,22 +1,22 @@
-<b>Dash'leriniz daima cebinizde sizinle olsun!</b> Herhangi bir QR kodunu okuyarak çabuk ödeme yapabilirsiniz. Bir tüccar olarak ödemeleri güvenilir ve anında alabilirsiniz. Dash Wallet ilk mobil Dash uygulamasıdır ve muhtemelen en güvenli Dash uygulamasıdır!
+<b>ION'leriniz daima cebinizde sizinle olsun!</b> Herhangi bir QR kodunu okuyarak çabuk ödeme yapabilirsiniz. Bir tüccar olarak ödemeleri güvenilir ve anında alabilirsiniz. ION Wallet ilk mobil ION uygulamasıdır ve muhtemelen en güvenli ION uygulamasıdır!
 
 
 <b>ÖZELLİKLER</b>
 
 • Hiçbir oturuma, web ya da bulut hizmetine gerek yoktur. Bu cüzdan merkezsiz ve eşten eşedir.
-• Dash meblağlarını DASH, mDASH ve µDASH olarak göster.
+• ION meblağlarını DASH, mDASH ve µDASH olarak göster.
 • Ulusal para birimlerine ve bu para birimlerinden dönüştürme.
-• QR kodları, Dash bağlantıları ve yakın alan iletişimi ile Dash alımı ve gönderilmesi.
-• Sık kullanılan Dash adresleri için adres defteri içerir.
+• QR kodları, ION bağlantıları ve yakın alan iletişimi ile ION alımı ve gönderilmesi.
+• Sık kullanılan ION adresleri için adres defteri içerir.
 • Çevrimdışı olduğunuzda Bluetooth vasıtasıyla ödemeler.
 • Alınan bitcoin'ler için sistem bildirimleri.
 • Kağıt cüzdanların taranması (mesela soğuk depolama için kullanılanlar).
-• Dash bakiyesini görüntüleyen widget.
+• ION bakiyesini görüntüleyen widget.
 
 
 <b>İŞTİRAK EDİN</b>
 
-Dash Wallet <b>açık kaynak</b> ve <b>özgür yazılımdır</b>. Lisans: GPLv3
+ION Wallet <b>açık kaynak</b> ve <b>özgür yazılımdır</b>. Lisans: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Kaynak kodumuz GitHub'da mevcuttur:
@@ -28,7 +28,7 @@ https://www.transifex.com/projects/p/bitcoin-wallet/
 
 <b>REFERANSLAR</b>
 
-• Birçok mobil cüzdan kodları için Dash Wallet'i temel alırlar. Mesela blockchain.info, Hive ve KnC.
+• Birçok mobil cüzdan kodları için ION Wallet'i temel alırlar. Mesela blockchain.info, Hive ve KnC.
 • https://bitcoin.org tarafından tavsiye edilen mobil cüzdan.
 • BitPay tarafından tavsiye edilir.
 

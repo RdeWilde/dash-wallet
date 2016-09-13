@@ -39,7 +39,7 @@
                 android:id="@+id/message_panel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/vivid_red"
+                android:background="@color/support_turquase"
                 android:padding="16dp"
                 android:text="Test message"
                 android:textColor="@color/white"
@@ -62,7 +62,7 @@
             android:layout_marginBottom="92dp"
             android:layout_marginRight="16dp"
             android:src="@drawable/ic_qrcode"
-            app:backgroundTint="@color/strong_blue_new" />
+            app:backgroundTint="@color/support_green" />
 
     </android.support.design.widget.CoordinatorLayout>
 

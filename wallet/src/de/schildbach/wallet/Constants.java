@@ -118,7 +118,7 @@ public final class Constants
 	public static final String DONATION_ADDRESS = CoinDefinition.DONATION_ADDRESS;
 
 	/** Recipient e-mail address for reports. */
-	public static final String REPORT_EMAIL = "hashengineeringsolutions@gmail.com";
+	public static final String REPORT_EMAIL = "support@ionomy.com";
 
 	/** Subject line for manually reported issues. */
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
@@ -138,7 +138,7 @@ public final class Constants
 
 	public static final String CREDITS_BITCOINJ_URL = "https://github.com/HashEngineering/" + CoinDefinition.coinName.toLowerCase() + "j";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
-    public static final String CREDITS_WEBSITE_URL = "http://darkcoin.io/";
+    public static final String CREDITS_WEBSITE_URL = "http://ionomy.com/";
     public static final String CREDITS_FORUM_URL = "https://darkcointalk.org/";
 
 	public static final MonetaryFormat LOCAL_FORMAT = new MonetaryFormat().noCode().minDecimals(2).optionalDecimals();
