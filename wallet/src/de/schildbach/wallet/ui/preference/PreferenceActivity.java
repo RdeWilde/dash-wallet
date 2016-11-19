@@ -80,4 +80,9 @@ public final class PreferenceActivity extends AppCompatPreferenceActivity
 
 		return super.onOptionsItemSelected(item);
 	}
+
+	@Override
+	protected boolean isValidFragment(String fragmentName) {
+		return true; //PreferenceActivity.class.getName().equals(fragmentName); // TODO FIXME I got no clue what this is
+	}
 }

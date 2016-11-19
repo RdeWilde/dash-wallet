@@ -5,7 +5,7 @@
 		android:key="about_version"
 		android:title="@string/about_version_title" />
 	<Preference
-		android:summary="© 2011-2016, the Bitcoin Wallet developers\n© 2014-2016 the ION Wallet Developers\n© 2016 ION Wallet Developers"
+		android:summary="© 2011-2016, the Bitcoin Wallet developers\n© 2014-2016 the DRK Wallet Developers\n© 2016 ION Wallet Developers"
 		android:title="@string/about_copyright_title" />
 	<Preference
 		android:key="about_license"
@@ -17,24 +17,24 @@
 	</Preference>
 	<Preference
 		android:key="about_source"
-		android:summary="https://github.com/HashEngineering/darkcoin-wallet"
+		android:summary="https://github.com/ionomy/ion-wallet"
 		android:title="@string/about_source_title" >
 		<intent
 			android:action="android.intent.action.VIEW"
-			android:data="https://github.com/HashEngineering/darkcoin-wallet" />
+			android:data="https://github.com/ionomy/ion-wallet" />
 	</Preference>
-	<Preference
-		android:key="about_market_app"
-		android:summary="@string/about_market_app_summary"
-		android:title="@string/about_market_app_title" />
-	<Preference
-		android:key="about_community_googleplus"
-		android:summary="@string/about_community_googleplus_summary"
-		android:title="@string/about_community_googleplus_title" >
-		<intent
-			android:action="android.intent.action.VIEW"
-			android:data="https://plus.google.com/communities/114489819709980878174" />
-	</Preference>
+	<!--<Preference-->
+		<!--android:key="about_market_app"-->
+		<!--android:summary="@string/about_market_app_summary"-->
+		<!--android:title="@string/about_market_app_title" />-->
+	<!--<Preference-->
+		<!--android:key="about_community_googleplus"-->
+		<!--android:summary="@string/about_community_googleplus_summary"-->
+		<!--android:title="@string/about_community_googleplus_title" >-->
+		<!--<intent-->
+			<!--android:action="android.intent.action.VIEW"-->
+			<!--android:data="https://plus.google.com/communities/114489819709980878174" />-->
+	<!--</Preference>-->
 	<!--Preference
 		android:key="about_twitter"
 		android:summary="\@bitcoin_wallet"
@@ -45,10 +45,27 @@
 	</Preference-->
 	<Preference
 		android:key="about_credits_bitcoinj"
-		android:summary="https://github/HashEngineering/darkcoinj" >
+		android:summary="https://github/bitcoinj/bitcoinj"
+		android:title="@string/about_credits_bitcoinj_title">
 		<intent
 			android:action="android.intent.action.VIEW"
 			android:data="https://github/HashEngineering/darkcoinj" />
+	</Preference>
+	<Preference
+		android:key="about_credits_darkcoinj"
+		android:summary="https://github/HashEngineering/darkcoinj"
+		android:title="@string/about_credits_darkcoinj_title">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://github/HashEngineering/darkcoinj" />
+	</Preference>
+	<Preference
+		android:key="about_credits_ionj"
+		android:summary="https://github/ionomy/ionj"
+		android:title="@string/about_credits_ionj_title">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://github/ionomy/ionj" />
 	</Preference>
 	<Preference
 		android:key="about_credits_zxing"

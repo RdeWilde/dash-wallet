@@ -24,8 +24,8 @@ public class ExtAppBarLayout extends AppBarLayout implements AppBarLayout.OnOffs
 
     private View toolbarTitlePanelView;
     private View toolbarLogoView;
-    private View toolbarTitleView;
-    private View toolbarSloganView;
+//    private View toolbarTitleView;
+//    private View toolbarSloganView;
 
     private boolean expanded = true;
 
@@ -57,8 +57,8 @@ public class ExtAppBarLayout extends AppBarLayout implements AppBarLayout.OnOffs
         addOnOffsetChangedListener(this);
         toolbarTitlePanelView = findViewById(R.id.toolbar_title_panel);
         toolbarLogoView = findViewById(R.id.toolbar_logo);
-        toolbarTitleView = findViewById(R.id.toolbar_title);
-        toolbarSloganView = findViewById(R.id.toolbar_slogan);
+//        toolbarTitleView = findViewById(R.id.toolbar_title);
+//        toolbarSloganView = findViewById(R.id.toolbar_slogan);
     }
 
     @Override
@@ -71,11 +71,11 @@ public class ExtAppBarLayout extends AppBarLayout implements AppBarLayout.OnOffs
         toolbarLogoView.setScaleX(scale);
         toolbarLogoView.setScaleY(scale);
 
-        if (scaleFactor > 0.1) {
-            toolbarTitleView.setVisibility(INVISIBLE);
-        } else {
-            toolbarTitleView.setVisibility(VISIBLE);
-        }
+//        if (scaleFactor > 0.1) {
+//            toolbarTitleView.setVisibility(INVISIBLE);
+//        } else {
+//            toolbarTitleView.setVisibility(VISIBLE);
+//        }
 
         if (scaleFactor > 0.5) {
             if (!expanded) {
@@ -91,20 +91,20 @@ public class ExtAppBarLayout extends AppBarLayout implements AppBarLayout.OnOffs
     }
 
     private void showSlogan() {
-        toolbarSloganView.startAnimation(fadeInAnimation);
-        fadeInAnimation.setAnimationListener(new AnimationListenerAdapter() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-                toolbarSloganView.setVisibility(VISIBLE);
-            }
-        });
-        toolbarTitlePanelView.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                blinkViews(toolbarLogoView, toolbarSloganView);
-                openUrl(DASH_WEBPAGE_URL);
-            }
-        });
+//        toolbarSloganView.startAnimation(fadeInAnimation);
+//        fadeInAnimation.setAnimationListener(new AnimationListenerAdapter() {
+//            @Override
+//            public void onAnimationStart(Animation animation) {
+//                toolbarSloganView.setVisibility(VISIBLE);
+//            }
+//        });
+//        toolbarTitlePanelView.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                blinkViews(toolbarLogoView, toolbarSloganView);
+//                openUrl(DASH_WEBPAGE_URL);
+//            }
+//        });
     }
 
     private void openUrl(String url) {
@@ -118,14 +118,14 @@ public class ExtAppBarLayout extends AppBarLayout implements AppBarLayout.OnOffs
     }
 
     private void hideLink() {
-        toolbarTitlePanelView.setOnClickListener(null);
-        fadeOutAnimation.setAnimationListener(new AnimationListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                toolbarSloganView.setVisibility(INVISIBLE);
-            }
-        });
-        toolbarSloganView.startAnimation(fadeOutAnimation);
+//        toolbarTitlePanelView.setOnClickListener(null);
+//        fadeOutAnimation.setAnimationListener(new AnimationListenerAdapter() {
+//            @Override
+//            public void onAnimationEnd(Animation animation) {
+//                toolbarSloganView.setVisibility(INVISIBLE);
+//            }
+//        });
+//        toolbarSloganView.startAnimation(fadeOutAnimation);
     }
 
     private void blinkViews(final View... views) {

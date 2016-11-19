@@ -173,7 +173,7 @@ public class WalletApplication extends Application
 
 	private void initLogging()
 	{
-		final File logDir = getDir("log", Constants.TEST ? Context.MODE_WORLD_READABLE : MODE_PRIVATE);
+		final File logDir = getDir("log", MODE_PRIVATE);
 		final File logFile = new File(logDir, "wallet.log");
 
 		final LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();

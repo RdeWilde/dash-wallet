@@ -25,7 +25,7 @@
                 android:name="de.schildbach.wallet.ui.WalletBalanceToolbarFragment"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="center_vertical|right"
+                android:layout_gravity="center_vertical|end"
                 tools:layout="@layout/wallet_balance_toolbar_fragment" />
 
         </FrameLayout>
@@ -35,42 +35,21 @@
     <RelativeLayout
         android:id="@+id/toolbar_title_panel"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
         android:clickable="true"
         android:orientation="vertical"
         app:layout_collapseMode="pin">
 
         <ImageView
             android:id="@+id/toolbar_logo"
-            android:layout_width="148dp"
-            android:layout_height="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
             android:scaleType="fitStart"
-            android:src="@drawable/dash_logo_white" />
-
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-4dp"
-            android:scaleY="0.7"
-            android:text="@string/dash_wallet"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="15sp"
-            android:textStyle="bold|italic"
-            android:layout_below="@+id/toolbar_logo" />
-
-        <TextView
-            android:id="@+id/toolbar_slogan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dash_slogan"
-            android:textColor="#ffffff"
-            android:textSize="13sp"
-            android:layout_below="@+id/toolbar_logo"
-            android:layout_marginTop="10dp" />
+            android:src="@drawable/ion_logo_white_text"
+            android:contentDescription="@string/logo" />
     </RelativeLayout>
 
 </android.support.design.widget.CollapsingToolbarLayout>

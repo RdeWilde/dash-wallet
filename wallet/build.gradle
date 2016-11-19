@@ -35,7 +35,12 @@ dependencies {
 
         android {
             compileSdkVersion 23
-            buildToolsVersion '23.0.2'
+            buildToolsVersion '23.0.3'
+
+            dexOptions {
+                jumboMode true
+
+            }
 
             lintOptions {
                 abortOnError false
@@ -43,6 +48,9 @@ dependencies {
             }
 
             defaultConfig {
+                minSdkVersion 15
+                targetSdkVersion 25
+
                 multiDexEnabled true
             }
 
