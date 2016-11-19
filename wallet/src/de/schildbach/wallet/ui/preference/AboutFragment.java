@@ -41,6 +41,8 @@ public final class AboutFragment extends PreferenceFragment
 	private static final String KEY_ABOUT_VERSION = "about_version";
 	private static final String KEY_ABOUT_MARKET_APP = "about_market_app";
 	private static final String KEY_ABOUT_CREDITS_BITCOINJ = "about_credits_bitcoinj";
+	private static final String KEY_ABOUT_CREDITS_DARKCOINJ = "about_credits_darkcoinj";
+	private static final String KEY_ABOUT_CREDITS_IONJ = "about_credits_ionj";
 
 	@Override
 	public void onAttach(final Activity activity)
@@ -60,10 +62,13 @@ public final class AboutFragment extends PreferenceFragment
 		addPreferencesFromResource(R.xml.preference_about);
 
 		findPreference(KEY_ABOUT_VERSION).setSummary(application.packageInfo().versionName);
-		Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.MARKET_APP_URL, activity.getPackageName())));
-		if (packageManager.resolveActivity(marketIntent, 0) == null)
-			marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.WEBMARKET_APP_URL, activity.getPackageName())));
-		findPreference(KEY_ABOUT_MARKET_APP).setIntent(marketIntent);
+//		// TODO
+//		Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.MARKET_APP_URL, activity.getPackageName())));
+//		if (packageManager.resolveActivity(marketIntent, 0) == null)
+//			marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.WEBMARKET_APP_URL, activity.getPackageName())));
+//		findPreference(KEY_ABOUT_MARKET_APP).setIntent(marketIntent);
 		findPreference(KEY_ABOUT_CREDITS_BITCOINJ).setTitle(getString(R.string.about_credits_bitcoinj_title, VersionMessage.BITCOINJ_VERSION));
+		findPreference(KEY_ABOUT_CREDITS_DARKCOINJ).setTitle(getString(R.string.about_credits_darkcoinj_title, VersionMessage.BITCOINJ_VERSION));
+		findPreference(KEY_ABOUT_CREDITS_IONJ).setTitle(getString(R.string.about_credits_ionj_title, VersionMessage.BITCOINJ_VERSION));
 	}
 }

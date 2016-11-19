@@ -46,7 +46,7 @@
 			android:summary="This is all unfinished stuff. Use at your own risk!"
 			android:title="Warning" />
 		<CheckBoxPreference
-			android:defaultValue="true"
+			android:defaultValue="false"
 			android:key="labs_instantx_enabled"
 			android:summary="Allow InstantSend to be used to send and receive coins."
 			android:title="Enable InstantSend" />
