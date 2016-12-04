@@ -26,7 +26,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach

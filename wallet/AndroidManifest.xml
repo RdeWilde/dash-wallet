@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="hashengineering.darkcoin.wallet"
+	package="ionomy.ion.wallet"
 	android:installLocation="internalOnly"
-	android:versionCode="40039"
-	android:versionName="4.40.12L" >
+	android:versionCode="40047"
+	android:versionName="4.40.15M" >
 	<uses-sdk
 		android:minSdkVersion="18"
 		android:targetSdkVersion="23"
@@ -75,7 +75,7 @@
 			<intent-filter>
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:mimeType="application/x-drktx" />
+				<data android:mimeType="application/x-ion-tx" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
@@ -91,8 +91,9 @@
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.intent.action.VIEW" />
 
-				<data android:scheme="dash" />
-				<data android:scheme="darkcoin" />
+				<!--<data android:scheme="dash" />-->
+				<!--<data android:scheme="darkcoin" />-->
+				<data android:scheme="ion" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
@@ -100,22 +101,23 @@
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:scheme="dash" />
-				<data android:scheme="darkcoin" />
+				<!--<data android:scheme="dash" />-->
+				<!--<data android:scheme="darkcoin" />-->
+				<data android:scheme="ion" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.intent.action.VIEW" />
 
-				<data android:mimeType="application/dash-paymentrequest" />
+				<data android:mimeType="application/ion-paymentrequest" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:mimeType="application/dash-paymentrequest" />
+				<data android:mimeType="application/ion-paymentrequest" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
@@ -164,7 +166,7 @@
 
 				<category android:name="android.intent.category.DEFAULT" />
 
-				<data android:mimeType="application/x-darkcoin-wallet-backup" />
+				<data android:mimeType="application/x-ion-wallet-backup" />
 			</intent-filter>
 		</activity>
 		<activity

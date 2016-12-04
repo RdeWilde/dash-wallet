@@ -111,7 +111,7 @@ public final class MasternodeLoader extends AsyncTaskLoader<Integer>
 		@Override
 		public void onMasternodeCountChanged(int newCount)
 		{
-			//masternodeSyncStatus = newStatus;
+//			masternodeSyncStatus = newCount;
 			safeForceLoad();
 		}
 	};

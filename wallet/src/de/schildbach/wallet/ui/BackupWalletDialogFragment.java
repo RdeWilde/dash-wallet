@@ -43,6 +43,7 @@ import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnShowListener;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -60,7 +61,7 @@ import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.util.Crypto;
 import de.schildbach.wallet.util.Iso8601Format;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -136,6 +137,15 @@ public class BackupWalletDialogFragment extends DialogFragment
 		passwordMismatchView = view.findViewById(R.id.backup_wallet_dialog_password_mismatch);
 
 		showView = (CheckBox) view.findViewById(R.id.backup_wallet_dialog_show);
+
+		if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
+			String[] permissions = {
+					"android.permission.READ_EXTERNAL_STORAGE",
+					"android.permission.WRITE_EXTERNAL_STORAGE"
+			};
+			int requestCode = 200;
+			requestPermissions(permissions, requestCode);
+		}
 
 		final TextView warningView = (TextView) view.findViewById(R.id.backup_wallet_dialog_warning_encrypted);
 		warningView.setVisibility(wallet.isEncrypted() ? View.VISIBLE : View.GONE);

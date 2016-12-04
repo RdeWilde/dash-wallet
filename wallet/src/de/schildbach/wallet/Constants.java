@@ -21,7 +21,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.text.format.DateUtils;
 
-import hashengineering.darkcoin.wallet.BuildConfig;
+import ionomy.ion.wallet.BuildConfig;
 import org.bitcoinj.core.CoinDefinition;
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.params.MainNetParams;
@@ -99,7 +99,7 @@ public final class Constants
 	public static final String VERSION_URL = "https://wallet.schildbach.de/version";
 
 	/** MIME type used for transmitting single transactions. */
-	public static final String MIMETYPE_TRANSACTION = "application/x-" + CoinDefinition.coinTicker.toLowerCase() + "tx";
+	public static final String MIMETYPE_TRANSACTION = "application/x-" + CoinDefinition.coinTicker.toLowerCase() + "-tx";
 
 
 	/** MIME type used for transmitting wallet backups. */

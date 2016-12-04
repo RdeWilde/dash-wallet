@@ -23,7 +23,7 @@ import com.google.common.base.Charsets;
 import com.google.common.io.BaseEncoding;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.util.Io;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 import org.bitcoinj.core.*;
 import org.bitcoinj.core.TransactionConfidence.ConfidenceType;
 import org.bitcoinj.script.ScriptBuilder;

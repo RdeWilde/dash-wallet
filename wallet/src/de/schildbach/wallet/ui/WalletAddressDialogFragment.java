@@ -33,7 +33,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.util.WalletUtils;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach

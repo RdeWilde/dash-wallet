@@ -44,7 +44,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import de.schildbach.wallet.AddressBookProvider;
 import de.schildbach.wallet.util.WalletUtils;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach

@@ -222,11 +222,11 @@
   <string name="preferences_category_labs">Labb</string>
   <string name="preferences_precision_title">Valör och precision</string>
   <string name="preferences_precision_summary">Enhet för att visa belopp i. Det här påverkar inte uträkningar.</string>
-  <string name="preferences_precision_labels_8">DASH, 8 decimaler</string>
-  <string name="preferences_precision_labels_6">DASH, 6 decimaler</string>
-  <string name="preferences_precision_labels_4">DASH, 4 decimaler</string>
-  <string name="preferences_precision_labels_2_3">mDASH, 2 decimaler</string>
-  <string name="preferences_precision_labels_0_6">µDASH, inga decimaler</string>
+  <string name="preferences_precision_labels_8">ION, 8 decimaler</string>
+  <string name="preferences_precision_labels_6">ION, 6 decimaler</string>
+  <string name="preferences_precision_labels_4">ION, 4 decimaler</string>
+  <string name="preferences_precision_labels_2_3">mION, 2 decimaler</string>
+  <string name="preferences_precision_labels_0_6">µION, inga decimaler</string>
   <string name="preferences_own_name_title">Ditt namn</string>
   <string name="preferences_own_name_summary">Skriv ditt namn för att användas vid betalningsmottagande. Gärna kort.</string>
   <string name="preferences_connectivity_notification_title">Anslutningsindikator</string>
@@ -289,8 +289,8 @@
   <string name="button_paste">Klistra in</string>
   <string name="button_share">Dela</string>
   <string name="button_set_as_default">Ange som standard</string>
-  <string name="button_request_coins">Ta emot ION</string>
-  <string name="button_send_coins">Skicka ION</string>
+  <string name="button_request_coins">Ta emot</string>
+  <string name="button_send_coins">Skicka</string>
   <string name="button_scan">Skanna</string>
   <string name="button_settings">Inställningar</string>
   <string name="action_show_qr">Visa QR-kod</string>

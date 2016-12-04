@@ -24,6 +24,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -31,6 +32,7 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -43,6 +45,8 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Process;
 import android.os.Vibrator;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.view.KeyEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -58,7 +62,7 @@ import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeReader;
 
 import de.schildbach.wallet.camera.CameraManager;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -215,28 +219,34 @@ public final class ScanActivity extends Activity implements SurfaceHolder.Callba
 		{
 			try
 			{
-				final Camera camera = cameraManager.open(surfaceHolder, !DISABLE_CONTINUOUS_AUTOFOCUS);
 
-				final Rect framingRect = cameraManager.getFrame();
-				final Rect framingRectInPreview = cameraManager.getFramePreview();
+				//If authorisation not granted for camera
+				if (ContextCompat.checkSelfPermission(ScanActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+					//ask for authorisation
+					ActivityCompat.requestPermissions(ScanActivity.this, new String[]{Manifest.permission.CAMERA}, 50);
+				} else {
 
-				runOnUiThread(new Runnable()
-				{
-					@Override
-					public void run()
-					{
-						scannerView.setFraming(framingRect, framingRectInPreview);
-					}
-				});
+					final Camera camera = cameraManager.open(surfaceHolder, !DISABLE_CONTINUOUS_AUTOFOCUS);
 
-				final String focusMode = camera.getParameters().getFocusMode();
-				final boolean nonContinuousAutoFocus = Camera.Parameters.FOCUS_MODE_AUTO.equals(focusMode)
-						|| Camera.Parameters.FOCUS_MODE_MACRO.equals(focusMode);
+					final Rect framingRect = cameraManager.getFrame();
+					final Rect framingRectInPreview = cameraManager.getFramePreview();
 
-				if (nonContinuousAutoFocus)
-					cameraHandler.post(new AutoFocusRunnable(camera));
+					runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							scannerView.setFraming(framingRect, framingRectInPreview);
+						}
+					});
 
-				cameraHandler.post(fetchAndDecodeRunnable);
+					final String focusMode = camera.getParameters().getFocusMode();
+					final boolean nonContinuousAutoFocus = Camera.Parameters.FOCUS_MODE_AUTO.equals(focusMode)
+							|| Camera.Parameters.FOCUS_MODE_MACRO.equals(focusMode);
+
+					if (nonContinuousAutoFocus)
+						cameraHandler.post(new AutoFocusRunnable(camera));
+
+					cameraHandler.post(fetchAndDecodeRunnable);
+				}
 			}
 			catch (final IOException x)
 			{

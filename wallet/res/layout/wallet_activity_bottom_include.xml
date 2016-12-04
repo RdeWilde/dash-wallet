@@ -3,7 +3,6 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
-	android:background="@drawable/action_bar_background"
 	android:divider="@drawable/divider_dark"
 	android:orientation="vertical"
 	android:showDividers="middle" >
@@ -13,6 +12,7 @@
 		android:name="de.schildbach.wallet.ui.WalletActionsFragment"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:layout_marginBottom="3dp"
 		tools:layout="@layout/wallet_actions_fragment" />
 
 	<fragment

@@ -222,11 +222,11 @@
   <string name="preferences_category_labs">Laboratoriot</string>
   <string name="preferences_precision_title">Nimellisarvo ja tarkkuus</string>
   <string name="preferences_precision_summary">Yksiköt, joissa määrät näytetään. Tämä ei vaikuta laskentoihin.</string>
-  <string name="preferences_precision_labels_8">DASH, 8 desimaalia</string>
-  <string name="preferences_precision_labels_6">DASH, 6 desimaalia</string>
-  <string name="preferences_precision_labels_4">DASH, 4 desimaalia</string>
-  <string name="preferences_precision_labels_2_3">mDASH, 2 desimaalia</string>
-  <string name="preferences_precision_labels_0_6">µDASH, ei desimaalia</string>
+  <string name="preferences_precision_labels_8">ION, 8 desimaalia</string>
+  <string name="preferences_precision_labels_6">ION, 6 desimaalia</string>
+  <string name="preferences_precision_labels_4">ION, 4 desimaalia</string>
+  <string name="preferences_precision_labels_2_3">mION, 2 desimaalia</string>
+  <string name="preferences_precision_labels_0_6">µION, ei desimaalia</string>
   <string name="preferences_own_name_title">Oma nimi</string>
   <string name="preferences_own_name_summary">Nimeä itsesi lisätäksesi nimesi maksupyyntöihin. Yritä pitää se lyhyenä.</string>
   <string name="preferences_connectivity_notification_title">Yhteysilmaisin</string>

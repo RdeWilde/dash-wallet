@@ -260,8 +260,8 @@
   <string name="button_paste">Umeweka</string>
   <string name="button_share">Umeshiriki</string>
   <string name="button_set_as_default">Chagua kuwa kama kawaida</string>
-  <string name="button_request_coins">Ombi pesa</string>
-  <string name="button_send_coins">Lipa pesa</string>
+  <string name="button_request_coins">Ombi</string>
+  <string name="button_send_coins">Lipa</string>
   <string name="button_scan">Bamba</string>
   <string name="button_settings">Mazingira</string>
   <string name="action_show_qr">Soma QR code</string>

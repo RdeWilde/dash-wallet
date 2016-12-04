@@ -25,7 +25,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import de.schildbach.wallet.util.ViewPagerTabs;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -50,7 +50,7 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 		if (pager != null)
 		{
 			final ViewPagerTabs pagerTabs = (ViewPagerTabs) findViewById(R.id.network_monitor_pager_tabs);
-			pagerTabs.addTabLabels(R.string.network_monitor_peer_list_title, R.string.network_monitor_block_list_title/* R.string.network_monitor_masternodes_title*/);
+			pagerTabs.addTabLabels(R.string.network_monitor_peer_list_title, R.string.network_monitor_block_list_title, R.string.network_monitor_masternodes_title);
 
 			final PagerAdapter pagerAdapter = new PagerAdapter(fm);
 
@@ -61,13 +61,13 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 
 			peerListFragment = new PeerListFragment();
 			blockListFragment = new BlockListFragment();
-			//masternodeFragment = new MasternodeFragment();
+			masternodeFragment = new MasternodeFragment();
 		}
 		else
 		{
 			peerListFragment = (PeerListFragment) fm.findFragmentById(R.id.peer_list_fragment);
 			blockListFragment = (BlockListFragment) fm.findFragmentById(R.id.block_list_fragment);
-			//masternodeFragment = null;
+			masternodeFragment = (MasternodeFragment) fm.findFragmentById(R.id.masternode_fragment);
 		}
 
 		initToolbar();
@@ -103,7 +103,7 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 		@Override
 		public int getCount()
 		{
-			return 2;
+			return 3;
 		}
 
 		@Override
@@ -111,10 +111,10 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 		{
 			if (position == 0)
 				return peerListFragment;
-			else //if(position == 1)
+			else if(position == 1)
 				return blockListFragment;
-			//else
-			//	return masternodeFragment;
+			else
+				return masternodeFragment;
 		}
 	}
 }

@@ -247,11 +247,11 @@
 	<string name="preferences_category_labs">Labor</string>
 	<string name="preferences_precision_title">Stückelung und Genauigkeit</string>
 	<string name="preferences_precision_summary">Maßeinheit für die Anzeige von Werten. Dies beeinflußt keine Berechnungen.</string>
-	<string name="preferences_precision_labels_8">DASH, 8 Dezimalen</string>
-	<string name="preferences_precision_labels_6">DASH, 6 Dezimalen</string>
-	<string name="preferences_precision_labels_4">DASH, 4 Dezimalen</string>
-	<string name="preferences_precision_labels_2_3">mDASH, 2 Dezimalen</string>
-	<string name="preferences_precision_labels_0_6">µDASH, keine Dezimalen</string>
+	<string name="preferences_precision_labels_8">ION, 8 Dezimalen</string>
+	<string name="preferences_precision_labels_6">ION, 6 Dezimalen</string>
+	<string name="preferences_precision_labels_4">ION, 4 Dezimalen</string>
+	<string name="preferences_precision_labels_2_3">mION, 2 Dezimalen</string>
+	<string name="preferences_precision_labels_0_6">µION, keine Dezimalen</string>
 	<string name="preferences_own_name_title">Eigener Name</string>
 	<string name="preferences_own_name_summary">Dein eigener Name, der zu Zahlungsanforderungen hinzugefügt wird. Versuch ihn kurz zu halten.</string>
 	<string name="preferences_connectivity_notification_title">Konnektivitäts-Anzeige</string>

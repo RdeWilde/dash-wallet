@@ -46,7 +46,7 @@ import org.slf4j.LoggerFactory;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.service.BlockchainService;
 import de.schildbach.wallet.service.BlockchainServiceImpl;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -60,11 +60,11 @@ public final class MasternodeFragment extends Fragment
 
 	private TextView liteModeView;
 	private TextView masterNodeInfo;
-	//private TextView myMasternodeCount;
+	private TextView myMasternodeCount;
 
 	private ViewAnimator viewGroup;
-	//private RecyclerView recyclerView;
-	//private PeerViewAdapter adapter;
+//	private RecyclerView recyclerView;
+//	private PeerViewAdapter adapter;
 
 	private final Handler handler = new Handler();
 
@@ -137,8 +137,6 @@ public final class MasternodeFragment extends Fragment
 	{
 		activity.unbindService(serviceConnection);
 
-
-
 		super.onDestroy();
 	}
 
@@ -181,7 +179,7 @@ public final class MasternodeFragment extends Fragment
 		@Override
 		public void onLoadFinished(final Loader<Integer> loader, final Integer newStatus)
 		{
-			//WalletBalanceToolbarFragment.this.masternodeSyncStatus = newStatus;
+//			WalletBalanceToolbarFragment.this.masternodeSyncStatus = newStatus;
 
 			updateView();
 

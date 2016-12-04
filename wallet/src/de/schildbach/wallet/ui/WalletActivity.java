@@ -67,6 +67,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -81,7 +82,7 @@ import de.schildbach.wallet.ui.InputParser.StringInputParser;
 import de.schildbach.wallet.ui.preference.PreferenceActivity;
 import de.schildbach.wallet.ui.send.SendCoinsActivity;
 import de.schildbach.wallet.ui.send.SweepWalletActivity;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 import de.schildbach.wallet.util.CrashReporter;
 import de.schildbach.wallet.util.Crypto;
 import de.schildbach.wallet.util.Io;
@@ -180,7 +181,7 @@ public final class WalletActivity extends AbstractWalletActivity
 
 	private void initFloatingButton()
     {
-		FloatingActionButton fabScanQr = (FloatingActionButton) findViewById(R.id.fab_scan_qr);
+		Button fabScanQr = (Button) findViewById(R.id.fab_scan_qr);
 		fabScanQr.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {

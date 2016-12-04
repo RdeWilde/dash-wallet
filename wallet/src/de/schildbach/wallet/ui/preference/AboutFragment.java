@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -63,10 +63,10 @@ public final class AboutFragment extends PreferenceFragment
 
 		findPreference(KEY_ABOUT_VERSION).setSummary(application.packageInfo().versionName);
 //		// TODO
-//		Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.MARKET_APP_URL, activity.getPackageName())));
-//		if (packageManager.resolveActivity(marketIntent, 0) == null)
-//			marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.WEBMARKET_APP_URL, activity.getPackageName())));
-//		findPreference(KEY_ABOUT_MARKET_APP).setIntent(marketIntent);
+		Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.MARKET_APP_URL, activity.getPackageName())));
+		if (packageManager.resolveActivity(marketIntent, 0) == null)
+			marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.WEBMARKET_APP_URL, activity.getPackageName())));
+		findPreference(KEY_ABOUT_MARKET_APP).setIntent(marketIntent);
 		findPreference(KEY_ABOUT_CREDITS_BITCOINJ).setTitle(getString(R.string.about_credits_bitcoinj_title, VersionMessage.BITCOINJ_VERSION));
 		findPreference(KEY_ABOUT_CREDITS_DARKCOINJ).setTitle(getString(R.string.about_credits_darkcoinj_title, VersionMessage.BITCOINJ_VERSION));
 		findPreference(KEY_ABOUT_CREDITS_IONJ).setTitle(getString(R.string.about_credits_ionj_title, VersionMessage.BITCOINJ_VERSION));

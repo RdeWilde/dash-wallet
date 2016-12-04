@@ -41,7 +41,7 @@ v0.1.1
 
 v0.1.0
 * First version
-digitalcoin Wallet
+ion Wallet
 -----------------
 v0.1.5-beta
 * update to bitcoin-wallet 3.46
@@ -60,8 +60,8 @@ v0.1.2-beta
 * added two nodes from a list of addnodes from the bitcointalk topic
 
 v0.1.1-beta
-* renamed to hashengineering.digitalcoin.wallet
-* added support for importing Bitcoin Private Keys from first digitalcoin app (Crypto-Expert)
+* renamed to hashengineering.ion.wallet
+* added support for importing Bitcoin Private Keys from first ion app (Crypto-Expert)
 
 v1.0.1.5
 * Fixed menu item doubling on rotate in address screen - langerhans (https://github.com/langerhans/dogecoin-wallet-new)
@@ -86,10 +86,10 @@ v1.0.1.2
 
 v1.0.1.1
 
-*  updated digitalcoin 1.0.1 - difficulty adjustment fork
+*  updated ion 1.0.1 - difficulty adjustment fork
 
 v1.00
-* Forked bitcoin-wallet v3.23 for digitalcoin V1.00 (http://digitalcoin.co)
+* Forked bitcoin-wallet v3.23 for ion V1.00 (http://ion.co)
 
 Bitcoin Wallet
 -------------------

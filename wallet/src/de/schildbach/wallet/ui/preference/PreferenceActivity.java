@@ -27,7 +27,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach

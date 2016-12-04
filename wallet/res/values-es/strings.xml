@@ -213,11 +213,11 @@
   <string name="preferences_category_labs">Laboratorio</string>
   <string name="preferences_precision_title">Denominación y precisión</string>
   <string name="preferences_precision_summary">Unidad para mostrar cantidad. No afecta a los cálculos.</string>
-  <string name="preferences_precision_labels_8">DASH, 8 dígitos</string>
-  <string name="preferences_precision_labels_6">DASH, 6 dígitos</string>
-  <string name="preferences_precision_labels_4">DASH, 4 dígitos</string>
-  <string name="preferences_precision_labels_2_3">mDASH, 2 dígitos</string>
-  <string name="preferences_precision_labels_0_6">µDASH, sin dígitos</string>
+  <string name="preferences_precision_labels_8">ION, 8 dígitos</string>
+  <string name="preferences_precision_labels_6">ION, 6 dígitos</string>
+  <string name="preferences_precision_labels_4">ION, 4 dígitos</string>
+  <string name="preferences_precision_labels_2_3">mION, 2 dígitos</string>
+  <string name="preferences_precision_labels_0_6">µION, sin dígitos</string>
   <string name="preferences_connectivity_notification_title">Indicador de conectividad</string>
   <string name="preferences_connectivity_notification_summary">Mostrar número actual de pares conectados en el área de notificaciones.</string>
   <string name="preferences_trusted_peer_title">Par de confianza</string>
@@ -278,7 +278,7 @@
   <string name="button_paste">Pegar</string>
   <string name="button_share">Compartir</string>
   <string name="button_set_as_default">Establecer como predeterminado</string>
-  <string name="button_request_coins">Pedir ION</string>
+  <string name="button_request_coins">Pedir</string>
   <string name="button_send_coins">Enviar</string>
   <string name="button_scan">Explorar</string>
   <string name="button_settings">Ajustes</string>

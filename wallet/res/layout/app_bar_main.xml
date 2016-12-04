@@ -29,27 +29,22 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#f00">
 
         <TextView
             android:id="@+id/toolbar_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/bg_form"
+            android:background="#0D1C25"
             android:paddingBottom="8dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:paddingTop="10dp"
+            android:paddingTop="8dp"
             android:text="toolbar message..."
             android:textColor="@color/white"
             android:textSize="14sp" />
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_marginTop="2dp"
-            android:background="@color/bg_bright"
-            android:orientation="horizontal" />
     </RelativeLayout>
 
 </android.support.design.widget.AppBarLayout>

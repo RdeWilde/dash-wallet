@@ -65,6 +65,7 @@ public final class CameraManager
 
 	public Camera open(final SurfaceHolder holder, final boolean continuousAutoFocus) throws IOException
 	{
+
 		// try back-facing camera
 		camera = Camera.open();
 

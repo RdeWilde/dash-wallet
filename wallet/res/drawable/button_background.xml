@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  Non focused states
+     -->
+    <item android:state_focused="false" android:state_selected="false" android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#2BBE79" />
+            <corners android:radius="6dp" />
+            <gradient android:startColor="#2BBE79" android:centerColor="#16A160" android:endColor="#2BBE79" android:angle="90" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_selected="true" android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#2BBE79" />
+            <corners android:radius="6dp" />
+            <gradient android:startColor="#2BBE79" android:centerColor="#16A160" android:endColor="#2BBE79" android:angle="90" />
+        </shape>
+    </item>
+
+    <!--  Focused states
+     -->
+    <item android:state_focused="true" android:state_selected="false" android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#16A160" />
+            <corners android:radius="6dp" />
+            <gradient android:startColor="#16A160" android:centerColor="#398439" android:endColor="#16A160" android:angle="90" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_selected="true" android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#16A160" />
+            <corners android:radius="6dp" />
+            <gradient android:startColor="#16A160" android:centerColor="#398439" android:endColor="#16A160" android:angle="90" />
+        </shape>
+    </item>
+    <!--  Pressed
+     -->
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#398439" />
+            <corners android:radius="6dp" />
+            <gradient android:startColor="#398439" android:centerColor="#398439" android:endColor="#398439" android:angle="90" />
+        </shape>
+    </item>
+</selector>

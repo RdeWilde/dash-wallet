@@ -46,7 +46,7 @@ import de.schildbach.wallet.ExchangeRatesProvider.ExchangeRate;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.service.BlockchainState;
 import de.schildbach.wallet.service.BlockchainStateLoader;
-import hashengineering.darkcoin.wallet.R;
+import ionomy.ion.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -243,27 +243,27 @@ public final class WalletBalanceToolbarFragment extends Fragment
 				viewBalanceBtc.setVisibility(View.INVISIBLE);
 			}
 
-            if(masternodeSyncStatus != MasternodeSync.MASTERNODE_SYNC_FINISHED)
-            {
+			if(masternodeSyncStatus != MasternodeSync.MASTERNODE_SYNC_FINISHED)
+			{
                 progressView.setVisibility(View.VISIBLE);
                 viewBalance.setVisibility(View.INVISIBLE);
-                String syncStatus = wallet.getContext().masternodeSync.getSyncStatus();
-                showAppBarMessage(syncStatus);
-            } else {
+				String syncStatus = wallet.getContext().masternodeSync.getSyncStatus();
+				showAppBarMessage(syncStatus);
+			} else {
 				//Show sync status of Masternodes
-				//int masternodesLoaded = wallet.getContext().masternodeSync.mapSeenSyncMNB.size();
-				//int totalMasternodes = wallet.getContext().masternodeSync.masterNodeCountFromNetwork();
+				int masternodesLoaded = wallet.getContext().masternodeSync.mapSeenSyncMNB.size();
+				int totalMasternodes = wallet.getContext().masternodeSync.masterNodeCountFromNetwork();
 
-				//if(totalMasternodes == 0 || totalMasternodes < masternodesLoaded + 100) {
+				if(totalMasternodes == 0 || totalMasternodes < masternodesLoaded + 100) {
 					progressView.setVisibility(View.GONE);
 					showAppBarMessage(null);
-				//}
-				//else
-				//{
+				}
+				else
+				{
 					//showAppBarMessage("Masternodes Loaded: " + masternodesLoaded *100 /totalMasternodes +"%");
-				//	showAppBarMessage("Masternodes Loaded: " + masternodesLoaded +" of "+ totalMasternodes);
-				//}
-            }
+					showAppBarMessage("Masternodes Loaded: " + masternodesLoaded +" of "+ totalMasternodes);
+				}
+			}
         }
 		else
 		{

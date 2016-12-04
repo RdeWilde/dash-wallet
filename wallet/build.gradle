@@ -16,6 +16,7 @@ dependencies {
     compile(project(':integration-android')) {
         exclude(group: 'com.google.android', module: 'android')
     }
+    compile 'net.sf.jopt-simple:jopt-simple:4.3'
     compile 'org.bitcoinj:ionj-core:0.13.5'
     compile 'com.google.protobuf:protobuf-java:2.5.0'
     compile 'com.google.guava:guava:16.0.1'
@@ -35,7 +36,7 @@ dependencies {
 
         android {
             compileSdkVersion 23
-            buildToolsVersion '23.0.3'
+            buildToolsVersion '25.0.0'
 
             dexOptions {
                 jumboMode true
@@ -87,10 +88,10 @@ dependencies {
                     applicationId = "hashengineering.dash.wallet.beta"
                 }
                 prod {
-                    applicationId = "hashengineering.darkcoin.wallet"
+                    applicationId = "ionomy.ion.wallet"
                 }
                 _testNet3 {
-                    applicationId = "hashengineering.darkcoin.wallet_test"
+                    applicationId = "ionomy.ion.wallet_test"
                 }
             }
 

@@ -19,7 +19,6 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="4dp"
-        android:layout_marginTop="2dp"
         android:background="@color/bg_dialog_title"
         android:orientation="horizontal" />
 

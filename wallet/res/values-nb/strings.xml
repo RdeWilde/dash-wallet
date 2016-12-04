@@ -222,11 +222,11 @@
   <string name="preferences_category_labs">Laboratoriet</string>
   <string name="preferences_precision_title">Benevnelse og presisjon</string>
   <string name="preferences_precision_summary">Enhet som beløp vises i. Dette påvirker ikke beregninger.</string>
-  <string name="preferences_precision_labels_8">DASH, 8 desimaler</string>
-  <string name="preferences_precision_labels_6">DASH, 6 desimaler</string>
-  <string name="preferences_precision_labels_4">DASH, 4 desimaler</string>
-  <string name="preferences_precision_labels_2_3">mDASH, 2 desimaler</string>
-  <string name="preferences_precision_labels_0_6">µDASH, ingen desimaler</string>
+  <string name="preferences_precision_labels_8">ION, 8 desimaler</string>
+  <string name="preferences_precision_labels_6">ION, 6 desimaler</string>
+  <string name="preferences_precision_labels_4">ION, 4 desimaler</string>
+  <string name="preferences_precision_labels_2_3">mION, 2 desimaler</string>
+  <string name="preferences_precision_labels_0_6">µION, ingen desimaler</string>
   <string name="preferences_own_name_title">Ditt navn</string>
   <string name="preferences_own_name_summary">Ditt navn, som skal legges til betalingsforespørsler. Prøv å holde det kort.</string>
   <string name="preferences_connectivity_notification_title">Tilkoblingsindikator</string>
@@ -289,8 +289,8 @@
   <string name="button_paste">Lim inn</string>
   <string name="button_share">Del</string>
   <string name="button_set_as_default">Sett som standard</string>
-  <string name="button_request_coins">Spør etter mynter</string>
-  <string name="button_send_coins">Send mynter</string>
+  <string name="button_request_coins">Spør etter</string>
+  <string name="button_send_coins">Send</string>
   <string name="button_scan">Skann</string>
   <string name="button_settings">Innstillinger</string>
   <string name="action_show_qr">Vis QR-kode</string>

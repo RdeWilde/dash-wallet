@@ -4,22 +4,30 @@ repositories {
     maven { url localMavenRepo }
 }
 dependencies {
+    compile 'com.android.support:multidex:1.0.0'
     compile(project(':integration-android')) {
         exclude(group: 'com.google.android', module: 'android')
     }
     compile 'org.bitcoinj:ionj-core:0.13.5'
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'net.sf.jopt-simple:jopt-simple:4.3'
 }
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'rdewilde'
+            keyPassword 'Rdw051284!'
+            storeFile file('/home/robert/.keystore.jks')
+            storePassword 'Rdw051284!'
+        }
+    }
     compileSdkVersion 'android-18'
-    buildToolsVersion '22.0.1'
-
+    buildToolsVersion '25.0.0'
     dexOptions {
         jumboMode true
     }
-
     lintOptions { abortOnError false }
-
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -28,7 +36,6 @@ android {
             assets.srcDirs = ['assets']
         }
     }
-
     packagingOptions {
         exclude 'lib/x86_64/darwin/libscrypt.dylib'
         exclude 'lib/x86_64/freebsd/libscrypt.so'
@@ -37,5 +44,17 @@ android {
         exclude 'com/google/thirdparty/publicsuffix/PublicSuffixType.gwt.xml'
         exclude 'org/bitcoinj/crypto/mnemonic/wordlist/english.txt'
         exclude 'org/bitcoinj/crypto/cacerts'
+    }
+    buildTypes {
+        all {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled true
+        }
     }
 }

@@ -222,11 +222,11 @@
   <string name="preferences_category_labs">Labo</string>
   <string name="preferences_precision_title">Dénomination et précision</string>
   <string name="preferences_precision_summary">Unité à utiliser pour l\'affichage. Ceci n\'affecte pas les calculs.</string>
-  <string name="preferences_precision_labels_8">DASH, 8 décimales</string>
-  <string name="preferences_precision_labels_6">DASH, 6 décimales</string>
-  <string name="preferences_precision_labels_4">DASH, 4 décimales</string>
-  <string name="preferences_precision_labels_2_3">mDASH, 2 décimales</string>
-  <string name="preferences_precision_labels_0_6">µDASH, pas de décimale</string>
+  <string name="preferences_precision_labels_8">ION, 8 décimales</string>
+  <string name="preferences_precision_labels_6">ION, 6 décimales</string>
+  <string name="preferences_precision_labels_4">ION, 4 décimales</string>
+  <string name="preferences_precision_labels_2_3">mION, 2 décimales</string>
+  <string name="preferences_precision_labels_0_6">µION, pas de décimale</string>
   <string name="preferences_own_name_title">Votre nom</string>
   <string name="preferences_own_name_summary">Votre nom qui sera ajouté aux demandes de paiement. Il doit être court.</string>
   <string name="preferences_connectivity_notification_title">Indicateur de connectivité</string>
@@ -289,8 +289,8 @@
   <string name="button_paste">Coller</string>
   <string name="button_share">Partager</string>
   <string name="button_set_as_default">Définir par défaut</string>
-  <string name="button_request_coins">Demande de DASH</string>
-  <string name="button_send_coins">Envoi de DASH</string>
+  <string name="button_request_coins">Demande</string>
+  <string name="button_send_coins">Envoi</string>
   <string name="button_scan">Numériser</string>
   <string name="button_settings">Paramètres</string>
   <string name="action_show_qr">Montrer le code QR</string>

@@ -216,8 +216,8 @@
   <string name="button_paste">הדבק</string>
   <string name="button_share">שתף</string>
   <string name="button_set_as_default">שמור ברירת מחדל</string>
-  <string name="button_request_coins">בקש מטבעות</string>
-  <string name="button_send_coins">שלח מטבעות</string>
+  <string name="button_request_coins">בקש</string>
+  <string name="button_send_coins">שלח</string>
   <string name="button_scan">סרוק</string>
   <string name="button_settings">הגדרות</string>
   <string name="action_show_qr">הראה ברקוד</string>

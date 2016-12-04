@@ -5,25 +5,25 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bg_panel"
+        android:background="#0C1C24"
         android:text="toolbar message..."
         android:textColor="@color/white"
         android:textSize="14sp"
         android:id="@+id/toolbar_message"
         android:paddingBottom="8dp"
-        android:paddingTop="24dp"
+        android:paddingTop="8dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="14dp"
-        android:orientation="horizontal">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="14dp"-->
+        <!--android:orientation="horizontal">-->
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/toolbar_bottom_overlay_left" />
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@drawable/toolbar_bottom_overlay_left" />-->
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 </RelativeLayout>

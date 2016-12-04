@@ -3,7 +3,6 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/appwidget_dark_bg_clickable"
 	android:divider="@drawable/appwidget_divider"
 	android:orientation="horizontal"
 	android:showDividers="middle" >
@@ -48,7 +47,7 @@
 				android:ellipsize="none"
 				android:fadingEdge="horizontal"
 				android:fadingEdgeLength="12dp"
-				android:singleLine="true"
+				android:maxLines="1"
 				android:textColor="@color/fg_network_significant"
 				android:textSize="@dimen/font_size_large" />
 		</LinearLayout>
@@ -61,28 +60,30 @@
 			android:ellipsize="none"
 			android:fadingEdge="horizontal"
 			android:fadingEdgeLength="12dp"
-			android:singleLine="true"
+			android:maxLines="1"
 			android:textColor="@color/fg_network_insignificant"
 			android:textSize="@dimen/font_size_normal" />
 	</LinearLayout>
 
-	<ImageButton
+	<Button
 		android:id="@+id/widget_button_request"
-		android:layout_width="0px"
+		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
 		android:layout_weight="1"
-		android:background="@drawable/appwidget_button_center"
-		android:contentDescription="@string/button_request_coins"
-		android:src="@drawable/ic_send_flipped_white_24dp" />
+		android:minWidth="150sp"
+		android:background="@drawable/button_background_alt"
+		android:text="@string/button_request_coins"
+		android:textAllCaps="true" />
 
-	<ImageButton
+	<Button
 		android:id="@+id/widget_button_send"
-		android:layout_width="0px"
+		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
 		android:layout_weight="1"
-		android:background="@drawable/appwidget_button_center"
-		android:contentDescription="@string/button_send_coins"
-		android:src="@drawable/ic_send_white_24dp" />
+		android:minWidth="150sp"
+		android:background="@drawable/button_background"
+		android:text="@string/button_send_coins"
+		android:textAllCaps="true" />
 
 	<ImageButton
 		android:id="@+id/widget_button_send_qr"

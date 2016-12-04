@@ -222,11 +222,11 @@
   <string name="preferences_category_labs">Labor</string>
   <string name="preferences_precision_title">Pontosítás és egyszerűsítés</string>
   <string name="preferences_precision_summary">Egység, amelyben mutatja az összeget. Ez nem érinti a számításokat.</string>
-  <string name="preferences_precision_labels_8">DASH, 8 tizedeshely</string>
-  <string name="preferences_precision_labels_6">DASH, 6 tizedeshely</string>
-  <string name="preferences_precision_labels_4">DASH, 4 tizedeshely</string>
-  <string name="preferences_precision_labels_2_3">mDASH, 2 tizedeshely</string>
-  <string name="preferences_precision_labels_0_6">µDASH, nincs tizedeshely</string>
+  <string name="preferences_precision_labels_8">ION, 8 tizedeshely</string>
+  <string name="preferences_precision_labels_6">ION, 6 tizedeshely</string>
+  <string name="preferences_precision_labels_4">ION, 4 tizedeshely</string>
+  <string name="preferences_precision_labels_2_3">mION, 2 tizedeshely</string>
+  <string name="preferences_precision_labels_0_6">µION, nincs tizedeshely</string>
   <string name="preferences_own_name_title">Saját név</string>
   <string name="preferences_own_name_summary">Saját elnevezésed, ami a fizetési kérelemhez adódik. Próbáld röviden.</string>
   <string name="preferences_connectivity_notification_title">Kapcsolódásjelző</string>
@@ -289,8 +289,8 @@
   <string name="button_paste">Beillesztés</string>
   <string name="button_share">Megosztás</string>
   <string name="button_set_as_default">Alapértelmezett</string>
-  <string name="button_request_coins">Érmék igénylése</string>
-  <string name="button_send_coins">Érmék küldése</string>
+  <string name="button_request_coins">igénylése</string>
+  <string name="button_send_coins">küldése</string>
   <string name="button_scan">Beolvasás</string>
   <string name="button_settings">Beállítások</string>
   <string name="action_show_qr">QR-kód megtekintése</string>
