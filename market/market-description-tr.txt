@@ -4,7 +4,7 @@
 <b>ÖZELLİKLER</b>
 
 • Hiçbir oturuma, web ya da bulut hizmetine gerek yoktur. Bu cüzdan merkezsiz ve eşten eşedir.
-• ION meblağlarını DASH, mDASH ve µDASH olarak göster.
+• ION meblağlarını ION, mION ve µION olarak göster.
 • Ulusal para birimlerine ve bu para birimlerinden dönüştürme.
 • QR kodları, ION bağlantıları ve yakın alan iletişimi ile ION alımı ve gönderilmesi.
 • Sık kullanılan ION adresleri için adres defteri içerir.

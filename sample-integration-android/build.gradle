@@ -4,7 +4,7 @@ repositories {
     maven { url localMavenRepo }
 }
 dependencies {
-    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:multidex:1.0.1'
     compile(project(':integration-android')) {
         exclude(group: 'com.google.android', module: 'android')
     }
@@ -13,17 +13,22 @@ dependencies {
     compile 'net.sf.jopt-simple:jopt-simple:4.3'
 }
 
+// Load keystore
+def keystorePropertiesFile = rootProject.file("keystore.properties");
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
     signingConfigs {
         config {
-            keyAlias 'rdewilde'
-            keyPassword 'Rdw051284!'
-            storeFile file('/home/robert/.keystore.jks')
-            storePassword 'Rdw051284!'
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
         }
     }
-    compileSdkVersion 'android-18'
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 23
+    buildToolsVersion '25.0.2'
     dexOptions {
         jumboMode true
     }
@@ -55,6 +60,7 @@ android {
         release {
             signingConfig signingConfigs.config
             minifyEnabled true
+            shrinkResources true
         }
     }
 }

@@ -4,7 +4,7 @@
 <b>FUNKSJONER</b>
 
 • Ingen registrering, webtjeneste eller sky trengs! Denne lommeboken er desentralisert og peer-to-peer.
-• Visning av bitcoinbeløpet i DASH, mDASH og μDASH.
+• Visning av bitcoinbeløpet i ION, mION og μION.
 • Konvertering til og fra nasjonale valutaer.
 • Sende og motta bitcoin via NFC, QR-koder eller ION-URLer.
 • Adressebok for regelmessig brukte ION-adresser.

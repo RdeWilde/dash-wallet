@@ -13,3 +13,4 @@ production/
 lib/
 out/
 *.iml
+keystore.properties

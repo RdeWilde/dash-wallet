@@ -3,7 +3,7 @@
 <b>FUNKTIONER</b>
 
 • Ingen registrering, web- eller molntjänst behövs! ION Wallet är decentraliserad och peer-to-peer.
-• Visa summa bitcoin i DASH, mDASH eller µDASH.
+• Visa summa bitcoin i ION, mION eller µION.
 • Konventering till och från nationell valuta.
 • Skicka och ta emot bitcoin via NFC, QR-koder eller en ION-URL.
 • Adressbok för de IONadresser man använder ofta.

@@ -3,7 +3,7 @@ IONy vždy so sebou vo svojom vrecku. Jednoduché a rýchle platby pomocou QR k�
 FUNKCIE:
 
 • Nie je potrebná žiadna registrácia ani žiadny účet.
-• Zobrazenie zostatku IONov v DASH alebo mDASH.
+• Zobrazenie zostatku IONov v ION alebo mION.
 • Prepočet hodnoty IONov do viacerých cudzích mien.
 • Posielanie a prijímanie IONov pomocou NFC, QR kódov alebo ION adries.
 • Adresár pre často používané ION adresy.

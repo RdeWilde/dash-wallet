@@ -36,7 +36,7 @@ public final class BitcoinIntegration
 
 	/**
 	 * Request any amount of Bitcoins (probably a donation) from user, without feedback from the app.
-	 * 
+	 *
 	 * @param context
 	 *            Android context
 	 * @param address
@@ -51,7 +51,7 @@ public final class BitcoinIntegration
 
 	/**
 	 * Request specific amount of Bitcoins from user, without feedback from the app.
-	 * 
+	 *
 	 * @param context
 	 *            Android context
 	 * @param address
@@ -68,7 +68,7 @@ public final class BitcoinIntegration
 
 	/**
 	 * Request payment from user, without feedback from the app.
-	 * 
+	 *
 	 * @param context
 	 *            Android context
 	 * @param paymentRequest
@@ -86,10 +86,10 @@ public final class BitcoinIntegration
 	 * received by overriding {@link android.app.Activity#onActivityResult()}. Result indicates either
 	 * {@link Activity#RESULT_OK} or {@link Activity#RESULT_CANCELED}. In the success case, use
 	 * {@link #transactionHashFromResult(Intent)} to read the transaction hash from the intent.
-	 * 
+	 *
 	 * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own Bitcoin
 	 * infrastructure and validate the transaction.
-	 * 
+	 *
 	 * @param activity
 	 *            Calling Android activity
 	 * @param requestCode
@@ -109,10 +109,10 @@ public final class BitcoinIntegration
 	 * overriding {@link android.app.Activity#onActivityResult()}. Result indicates either {@link Activity#RESULT_OK} or
 	 * {@link Activity#RESULT_CANCELED}. In the success case, use {@link #transactionHashFromResult(Intent)} to read the
 	 * transaction hash from the intent.
-	 * 
+	 *
 	 * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own Bitcoin
 	 * infrastructure and validate the transaction.
-	 * 
+	 *
 	 * @param activity
 	 *            Calling Android activity
 	 * @param requestCode
@@ -132,10 +132,10 @@ public final class BitcoinIntegration
 	 * {@link android.app.Activity#onActivityResult()}. Result indicates either {@link Activity#RESULT_OK} or
 	 * {@link Activity#RESULT_CANCELED}. In the success case, use {@link #transactionHashFromResult(Intent)} to read the
 	 * transaction hash from the intent.
-	 * 
+	 *
 	 * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own Bitcoin
 	 * infrastructure and validate the transaction.
-	 * 
+	 *
 	 * @param activity
 	 *            Calling Android activity
 	 * @param requestCode
@@ -152,7 +152,7 @@ public final class BitcoinIntegration
 
 	/**
 	 * Get payment request from intent. Meant for usage by applications accepting payment requests.
-	 * 
+	 *
 	 * @param intent
 	 *            intent
 	 * @return payment request or null
@@ -166,7 +166,7 @@ public final class BitcoinIntegration
 
 	/**
 	 * Put BIP70 payment message into result intent. Meant for usage by Bitcoin wallet applications.
-	 * 
+	 *
 	 * @param result
 	 *            result intent
 	 * @param payment
@@ -179,10 +179,10 @@ public final class BitcoinIntegration
 
 	/**
 	 * Get BIP70 payment message from result intent. Meant for usage by applications initiating a Bitcoin payment.
-	 * 
+	 *
 	 * You can use the transactions contained in the payment to validate the payment. For this, you need your own
 	 * Bitcoin infrastructure though. There is no guarantee that the payment will ever confirm.
-	 * 
+	 *
 	 * @param result
 	 *            result intent
 	 * @return payment message
@@ -196,7 +196,7 @@ public final class BitcoinIntegration
 
 	/**
 	 * Put transaction hash into result intent. Meant for usage by Bitcoin wallet applications.
-	 * 
+	 *
 	 * @param result
 	 *            result intent
 	 * @param txHash
@@ -209,11 +209,11 @@ public final class BitcoinIntegration
 
 	/**
 	 * Get transaction hash from result intent. Meant for usage by applications initiating a Bitcoin payment.
-	 * 
+	 *
 	 * You can use this hash to request the transaction from the Bitcoin network, in order to validate. For this, you
 	 * need your own Bitcoin infrastructure though. There is no guarantee that the transaction has ever been broadcasted
 	 * to the Bitcoin network.
-	 * 
+	 *
 	 * @param result
 	 *            result intent
 	 * @return transaction hash

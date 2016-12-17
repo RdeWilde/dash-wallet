@@ -20,7 +20,7 @@ import ionomy.ion.wallet.R;
  */
 public class ExtAppBarLayout extends AppBarLayout implements AppBarLayout.OnOffsetChangedListener {
 
-    private static final String DASH_WEBPAGE_URL = "http://www.dash.org";
+    private static final String ION_WEBPAGE_URL = "http://www.ionomy.com";
 
     private View toolbarTitlePanelView;
     private View toolbarLogoView;
@@ -102,7 +102,7 @@ public class ExtAppBarLayout extends AppBarLayout implements AppBarLayout.OnOffs
 //            @Override
 //            public void onClick(View v) {
 //                blinkViews(toolbarLogoView, toolbarSloganView);
-//                openUrl(DASH_WEBPAGE_URL);
+//                openUrl(ION_WEBPAGE_URL);
 //            }
 //        });
     }

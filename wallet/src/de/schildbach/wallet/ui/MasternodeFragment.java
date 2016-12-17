@@ -54,13 +54,13 @@ import ionomy.ion.wallet.R;
 public final class MasternodeFragment extends Fragment
 {
 	private AbstractWalletActivity activity;
-	private LoaderManager loaderManager;
+//	private LoaderManager loaderManager;
 
 	private BlockchainService service;
 
 	private TextView liteModeView;
-	private TextView masterNodeInfo;
-	private TextView myMasternodeCount;
+//	private TextView masterNodeInfo;
+//	private TextView myMasternodeCount;
 
 	private ViewAnimator viewGroup;
 //	private RecyclerView recyclerView;
@@ -83,7 +83,7 @@ public final class MasternodeFragment extends Fragment
 		super.onAttach(activity);
 
 		this.activity = (AbstractWalletActivity) activity;
-		this.loaderManager = getLoaderManager();
+//		this.loaderManager = getLoaderManager();
 		this.dashContext = ((WalletApplication) activity.getApplication()).getWallet().getContext();
 	}
 
@@ -109,9 +109,9 @@ public final class MasternodeFragment extends Fragment
 	{
 		final View view = inflater.inflate(R.layout.masternode_fragment, container, false);
 
-		//viewGroup = (ViewAnimator) view.findViewById(R.id.peer_list_group);
+		viewGroup = (ViewAnimator) view.findViewById(R.id.peer_list_group);
 		liteModeView = (TextView)view.findViewById(R.id.masternode_lite_mode);
-		masterNodeInfo = (TextView)view.findViewById(R.id.masternode_info);
+//		masterNodeInfo = (TextView)view.findViewById(R.id.masternode_info);
 
 		return view;
 	}
@@ -147,47 +147,47 @@ public final class MasternodeFragment extends Fragment
 		{
 			service = ((BlockchainServiceImpl.LocalBinder) binder).getService();
 
-			loaderManager.initLoader(ID_MASTERNODE_LOADER, null, masternodeLoaderCallbacks);
+//			loaderManager.initLoader(ID_MASTERNODE_LOADER, null, masternodeLoaderCallbacks);
 		}
 
 		@Override
 		public void onServiceDisconnected(final ComponentName name)
 		{
-			loaderManager.destroyLoader(ID_MASTERNODE_LOADER);
+//			loaderManager.destroyLoader(ID_MASTERNODE_LOADER);
 
 			service = null;
 		}
 	};
 	private void updateView()
 	{
-		int myMasternodes = dashContext.masternodeManager.countEnabled();
-		int totalMasternodes = dashContext.masternodeSync.masterNodeCountFromNetwork();
-		masterNodeInfo.setText(myMasternodes+ " / " + totalMasternodes );
+//		int myMasternodes = dashContext.masternodeManager.countEnabled();
+//		int totalMasternodes = dashContext.masternodeSync.masterNodeCountFromNetwork();
+//		masterNodeInfo.setText(myMasternodes+ " / " + totalMasternodes );
 		liteModeView.setText(dashContext.isLiteMode() ? "ON" : "OFF");
 	}
 
 
 
-	private final LoaderManager.LoaderCallbacks<Integer> masternodeLoaderCallbacks = new LoaderManager.LoaderCallbacks<Integer>()
-	{
-		@Override
-		public Loader<Integer> onCreateLoader(final int id, final Bundle args)
-		{
-			return new MasternodeLoader(activity, dashContext);
-		}
-
-		@Override
-		public void onLoadFinished(final Loader<Integer> loader, final Integer newStatus)
-		{
+//	private final LoaderManager.LoaderCallbacks<Integer> masternodeLoaderCallbacks = new LoaderManager.LoaderCallbacks<Integer>()
+//	{
+//		@Override
+//		public Loader<Integer> onCreateLoader(final int id, final Bundle args)
+//		{
+//			return new MasternodeLoader(activity, dashContext);
+//		}
+//
+//		@Override
+//		public void onLoadFinished(final Loader<Integer> loader, final Integer newStatus)
+//		{
 //			WalletBalanceToolbarFragment.this.masternodeSyncStatus = newStatus;
-
-			updateView();
-
-		}
-
-		@Override
-		public void onLoaderReset(final Loader<Integer> loader)
-		{
-		}
-	};
+//
+//			updateView();
+//
+//		}
+//
+//		@Override
+//		public void onLoaderReset(final Loader<Integer> loader)
+//		{
+//		}
+//	};
 }

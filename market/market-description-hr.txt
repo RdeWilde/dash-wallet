@@ -4,7 +4,7 @@
 <b>ZNAČAJKE</b>
 
 • Bez registracije, web servis ili cloud potreban! Ovaj novčanik je de-centraliziran i klijent prema klijentu.
-• Prikaži Bitcoin iznos u DASH, mDASH i uDASH.
+• Prikaži Bitcoin iznos u ION, mION i uION.
 • Pretvorba u ili iz nacionalnih valuta.
 • Slanje i primanje Bitcoina s NFC, QR kodom ili Bitcoin URL-om.
 • Adresar za često korištene Bitcoin adrese.

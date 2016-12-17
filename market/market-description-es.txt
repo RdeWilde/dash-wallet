@@ -4,7 +4,7 @@
 <b>CARACTERÍSTICAS</b>
 
 • ¡No requiere registro, servidor en la nube o servicio web! Este monedero es auténticamente descentralizado y entre pares (peer-to-peer).
-• Muestra la cantidad de ION en DASH, mDASH, y µDASH.
+• Muestra la cantidad de ION en ION, mION, y µION.
 • Conversión hacia y desde divisas nacionales.
 • Envío y recepción de ION mediante NFC, códigos QR o identificadores URL ION.
 • Libreta de direcciones para guardar las direcciones ION más utilizadas.

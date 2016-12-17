@@ -96,7 +96,7 @@ public final class Constants
 			: BITEASY_API_URL_TEST;
 
 	/** URL to fetch version alerts from. */
-	public static final String VERSION_URL = "https://wallet.schildbach.de/version";
+	public static final String VERSION_URL = "https://wallet.ionomy.nl/version";
 
 	/** MIME type used for transmitting single transactions. */
 	public static final String MIMETYPE_TRANSACTION = "application/x-" + CoinDefinition.coinTicker.toLowerCase() + "-tx";
@@ -139,15 +139,15 @@ public final class Constants
 	public static final String CREDITS_BITCOINJ_URL = "https://github.com/HashEngineering/" + CoinDefinition.coinName.toLowerCase() + "j";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
     public static final String CREDITS_WEBSITE_URL = "http://ionomy.com/";
-    public static final String CREDITS_FORUM_URL = "https://darkcointalk.org/";
+    public static final String CREDITS_FORUM_URL = "https://iontalk.com/";
 
 	public static final MonetaryFormat LOCAL_FORMAT = new MonetaryFormat().noCode().minDecimals(2).optionalDecimals();
 
 	public static final String FORKED_FROM_SOURCE = "based on bitcoin-wallet 3.46\n";
 	public static final String FORKED_FROM_SOURCE_BITCOINJ = "based on bitcoinj 0.12\n";
 	public static final BaseEncoding HEX = BaseEncoding.base16().lowerCase();
-	public static final String SOURCE_URL = "https://github.com/HashEngineering/" + CoinDefinition.coinName.toLowerCase() + "-wallet";
-	public static final String BINARY_URL = "https://github.com/HashEngineering/"+ CoinDefinition.coinName.toLowerCase() +"-wallet/releases";
+	public static final String SOURCE_URL = "https://github.com/ionomy/" + CoinDefinition.coinName.toLowerCase() + "-wallet";
+	public static final String BINARY_URL = "https://github.com/ionomy/"+ CoinDefinition.coinName.toLowerCase() +"-wallet/releases";
 
 	public static final String MARKET_APP_URL = "market://details?id=%s";
 	public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";

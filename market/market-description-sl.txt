@@ -3,7 +3,7 @@ Nosite svoje novce vedno s seboj v žepu. Plačila so hitra, le prečitate QR-ko
 LASTNOSTI:
 
 • Potrebna ni nobena registracija, spletna storitev ali oblak! Ta denarnica deluje povsem decentralizirano in vrstniško.
-• Prikaz zneskov v DASH, mDASH ali µDASH.
+• Prikaz zneskov v ION, mION ali µION.
 • Samodejna pretvorba v evre in druge lokalne valute.
 • Pošiljanje in prejemanje IONov prek NFC, QR-kod ali ION URL-jev.
 • Zasebni imenik ION naslovov.

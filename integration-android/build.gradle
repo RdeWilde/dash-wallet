@@ -17,7 +17,7 @@ sourceSets {
     }
 }
 
-compileJava {
-    sourceCompatibility '1.5'
-    targetCompatibility '1.5'
-}
+//compileJava {
+//    sourceCompatibility JavaVersion.VERSION_1_8
+//    targetCompatibility JavaVersion.VERSION_1_8
+//}

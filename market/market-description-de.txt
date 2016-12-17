@@ -4,7 +4,7 @@
 <b>FEATURES</b>
 
 • Keine Registrierung, Web-Dienst oder Cloud nötig! Diese Wallet ist dezentral und Peer to Peer.
-• Anzeige von ION-Werten in DASH, mDASH und µDASH.
+• Anzeige von ION-Werten in ION, mION und µION.
 • Umrechnung von und zu den nationalen Währungen.
 • Senden und Empfangen von ION via NFC, QR-Codes oder ION URLs.
 • Adressbuch für regelmäßig genutzte Empfänger.

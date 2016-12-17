@@ -4,7 +4,7 @@
 <b>CARACTERÍSTICAS</b>
 
 • Sem necessidade de cadastro, serviço web ou hospedagem! Esta carteira é descentralizada e "peer to peer".
-• Exibe a quantidade de ION em DASH, mDASH e µDASH.
+• Exibe a quantidade de ION em ION, mION e µION.
 • Conversão para moedas nacionais.
 • Envio e recebimento de ION via NFC, códigos QR ou endereços ION.
 • Catálogo para guardar os endereços mais utilizados.

@@ -4,7 +4,7 @@
 <b>FUNKTIONER</b>
 
 • Ingen registrering, webservice eller sky behøves! Tegnebogen er decentraliseret og peer-to-peer.
-• Visning af ION-beløb i DASH, mDASH og µDASH.
+• Visning af ION-beløb i ION, mION og µION.
 • Konvertering til og fra lokale valutaer.
 • Afsendelse og modtagelse af ION via NFC, QR-koder eller ION-URLer.
 • Adressebog til ofte brugte ION-adresser.

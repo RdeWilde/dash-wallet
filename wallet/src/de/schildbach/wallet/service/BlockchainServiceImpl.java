@@ -674,8 +674,8 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
 				{
 					final long start = System.currentTimeMillis();
 					final InputStream checkpointsInputStream = getAssets().open(Constants.Files.CHECKPOINTS_FILENAME);
-					// TODO
-//					CheckpointManager.checkpoint(Constants.NETWORK_PARAMETERS, checkpointsInputStream, blockStore, earliestKeyCreationTime);
+
+					CheckpointManager.checkpoint(Constants.NETWORK_PARAMETERS, checkpointsInputStream, blockStore, earliestKeyCreationTime);
 					log.info("checkpoints loaded from '{}', took {}ms", Constants.Files.CHECKPOINTS_FILENAME, System.currentTimeMillis() - start);
 				}
 				catch (final IOException x)

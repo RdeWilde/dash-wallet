@@ -4,7 +4,7 @@
 <b>OMINAISUUDET</b>
 
 • Ei vaadi rekisteröintiä, verkkopalveluja tai pilvitallennusta! Tämä lompakko on hajautettu ja suorayhteyksinen.
-• Mahdollisuus näyttää ION-varat määrissä DASH, mDASH ja µDASH.
+• Mahdollisuus näyttää ION-varat määrissä ION, mION ja µION.
 • Yksikkömuunnos valtioiden valuuttojen välillä.
 • IONien lähettäminen ja vastaanottaminen NFC, QR-koodien tai ION-URL-osotteiden avulla.
 • Osoitekirja säännöllisesti käytettyjä ION-osoitteita varten.

@@ -3,11 +3,11 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	package="ionomy.ion.wallet"
 	android:installLocation="internalOnly"
-	android:versionCode="40047"
+	android:versionCode="40049"
 	android:versionName="4.40.15M" >
 	<uses-sdk
 		android:minSdkVersion="18"
-		android:targetSdkVersion="23"
+		android:targetSdkVersion="25"
 		tools:ignore="OldTargetApi" />
 
 	<uses-permission android:name="android.permission.INTERNET" />

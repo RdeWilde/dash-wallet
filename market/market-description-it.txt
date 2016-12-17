@@ -3,7 +3,7 @@
 <b>CARATTERISTICHE</b>
 
 • Non è necessaria alcuna registrazione, servizio web o cloud! Questo portafoglio è de-centralizzato e peer to peer.
-• Mostra l'ammontare di ION in DASH, mDASH e µDASH.
+• Mostra l'ammontare di ION in ION, mION e µION.
 • Conversione verso e dalle monete nazionali.
 • Invio e ricevimento di ION tramite NFC, codici QR o URL ION.
 • Rubrica degli indirizzi per usare indirizzi ION regolarmente.
