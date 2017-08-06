@@ -90,7 +90,7 @@ public final class Constants
 	public static final String MIMETYPE_BACKUP_PRIVATE_KEYS = "x-"+CoinDefinition.coinName.toLowerCase()+"/private-keys";
 
 	private static final String BITEASY_API_URL_PROD = CoinDefinition.UNSPENT_API_URL;//"https://api.biteasy.com/blockchain/v1/";
-	private static final String BITEASY_API_URL_TEST = "https://api.biteasy.com/testnet/v1/";
+	private static final String BITEASY_API_URL_TEST = CoinDefinition.UNSPENT_API_URL;//"https://api.biteasy.com/testnet/v1/";
 	/** Base URL for blockchain API. */
 	public static final String BITEASY_API_URL = NETWORK_PARAMETERS.getId().equals(NetworkParameters.ID_MAINNET) ? BITEASY_API_URL_PROD
 			: BITEASY_API_URL_TEST;

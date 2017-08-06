@@ -148,7 +148,7 @@ public final class WalletBalanceToolbarFragment extends Fragment
 		loaderManager.initLoader(ID_BALANCE_LOADER, null, balanceLoaderCallbacks);
 		loaderManager.initLoader(ID_RATE_LOADER, null, rateLoaderCallbacks);
 		loaderManager.initLoader(ID_BLOCKCHAIN_STATE_LOADER, null, blockchainStateLoaderCallbacks);
-//        loaderManager.initLoader(ID_MASTERNODE_SYNC_LOADER, null, masternodeSyncLoaderCallbacks);
+        loaderManager.initLoader(ID_MASTERNODE_SYNC_LOADER, null, masternodeSyncLoaderCallbacks);
 
 		updateView();
 	}
@@ -159,7 +159,7 @@ public final class WalletBalanceToolbarFragment extends Fragment
 		loaderManager.destroyLoader(ID_BLOCKCHAIN_STATE_LOADER);
 		loaderManager.destroyLoader(ID_RATE_LOADER);
 		loaderManager.destroyLoader(ID_BALANCE_LOADER);
-//		loaderManager.destroyLoader(ID_MASTERNODE_SYNC_LOADER);
+		loaderManager.destroyLoader(ID_MASTERNODE_SYNC_LOADER);
 
 		super.onPause();
 	}
@@ -243,27 +243,27 @@ public final class WalletBalanceToolbarFragment extends Fragment
 				viewBalanceBtc.setVisibility(View.INVISIBLE);
 			}
 
-			if(masternodeSyncStatus != MasternodeSync.MASTERNODE_SYNC_FINISHED)
-			{
-                progressView.setVisibility(View.VISIBLE);
-                viewBalance.setVisibility(View.INVISIBLE);
-				String syncStatus = wallet.getContext().masternodeSync.getSyncStatus();
-				showAppBarMessage(syncStatus);
-			} else {
+//			if(masternodeSyncStatus != MasternodeSync.MASTERNODE_SYNC_FINISHED)
+//			{
+//                progressView.setVisibility(View.VISIBLE);
+//                viewBalance.setVisibility(View.INVISIBLE);
+//				String syncStatus = wallet.getContext().masternodeSync.getSyncStatus();
+//				showAppBarMessage(syncStatus);
+//			} else {
 				//Show sync status of Masternodes
-//				int masternodesLoaded = wallet.getContext().masternodeSync.mapSeenSyncMNB.size();
-//				int totalMasternodes = wallet.getContext().masternodeSync.masterNodeCountFromNetwork();
-//
-//				if(totalMasternodes == 0 || totalMasternodes < masternodesLoaded + 100) {
+				int masternodesLoaded = wallet.getContext().masternodeSync.mapSeenSyncMNB.size();
+				int totalMasternodes = wallet.getContext().masternodeSync.masterNodeCountFromNetwork();
+
+				if(totalMasternodes == 0 || totalMasternodes < masternodesLoaded + 100) {
 					progressView.setVisibility(View.GONE);
 					showAppBarMessage(null);
-//				}
-//				else
-//				{
+				}
+				else
+				{
 					//showAppBarMessage("Masternodes Loaded: " + masternodesLoaded *100 /totalMasternodes +"%");
-//					showAppBarMessage("Masternodes Loaded: " + masternodesLoaded +" of "+ totalMasternodes);
-//				}
-			}
+					showAppBarMessage("Masternodes Loaded: " + masternodesLoaded +" of "+ totalMasternodes);
+				}
+//			}
         }
 		else
 		{
@@ -377,26 +377,26 @@ public final class WalletBalanceToolbarFragment extends Fragment
 		{
 		}
 	};
-//	private final LoaderManager.LoaderCallbacks<Integer> masternodeSyncLoaderCallbacks = new LoaderManager.LoaderCallbacks<Integer>()
-//	{
-//		@Override
-//		public Loader<Integer> onCreateLoader(final int id, final Bundle args)
-//		{
-//			return new MasternodeSyncLoader(activity, wallet);
-//		}
-//
-//		@Override
-//		public void onLoadFinished(final Loader<Integer> loader, final Integer newStatus)
-//		{
-//			WalletBalanceToolbarFragment.this.masternodeSyncStatus = newStatus;
-//
-//			updateView();
-//
-//		}
-//
-//		@Override
-//		public void onLoaderReset(final Loader<Integer> loader)
-//		{
-//		}
-//	};
+	private final LoaderManager.LoaderCallbacks<Integer> masternodeSyncLoaderCallbacks = new LoaderManager.LoaderCallbacks<Integer>()
+	{
+		@Override
+		public Loader<Integer> onCreateLoader(final int id, final Bundle args)
+		{
+			return new MasternodeSyncLoader(activity, wallet);
+		}
+
+		@Override
+		public void onLoadFinished(final Loader<Integer> loader, final Integer newStatus)
+		{
+			WalletBalanceToolbarFragment.this.masternodeSyncStatus = newStatus;
+
+			updateView();
+
+		}
+
+		@Override
+		public void onLoaderReset(final Loader<Integer> loader)
+		{
+		}
+	};
 }

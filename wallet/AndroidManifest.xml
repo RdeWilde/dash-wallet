@@ -3,13 +3,14 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	package="ionomy.ion.wallet"
 	android:installLocation="internalOnly"
-	android:versionCode="40049"
-	android:versionName="4.40.15M" >
+	android:versionCode="45010"
+	android:versionName="4.50.10M">
 	<uses-sdk
-		android:minSdkVersion="18"
+		android:minSdkVersion="20"
 		android:targetSdkVersion="25"
 		tools:ignore="OldTargetApi" />
 
+	<!--<uses-permission android:name="android.permission.SET_DEBUG_APP" />-->
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />

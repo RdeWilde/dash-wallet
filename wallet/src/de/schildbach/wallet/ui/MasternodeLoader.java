@@ -18,7 +18,11 @@
 package de.schildbach.wallet.ui;
 
 import android.content.AsyncTaskLoader;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.support.v4.content.LocalBroadcastManager;
 
 
 import org.bitcoinj.core.MasternodeManager;
@@ -32,12 +36,14 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.RejectedExecutionException;
 
+import de.schildbach.wallet.WalletApplication;
+
 /**
  * @author Andreas Schildbach
  */
 public final class MasternodeLoader extends AsyncTaskLoader<Integer>
 {
-	//private LocalBroadcastManager broadcastManager;
+	private LocalBroadcastManager broadcastManager;
 	private final MasternodeSync masternodeSync;
 	private final MasternodeManager masternodeManager;
 	private int masternodeSyncStatus;
@@ -50,7 +56,7 @@ public final class MasternodeLoader extends AsyncTaskLoader<Integer>
 		super(context);
 		this.dashContext = dashContext;
 
-		//this.broadcastManager = LocalBroadcastManager.getInstance(context.getApplicationContext());
+		this.broadcastManager = LocalBroadcastManager.getInstance(context.getApplicationContext());
 		this.masternodeSync = dashContext.masternodeSync;
 		this.masternodeSyncStatus = masternodeSync.getSyncStatusInt();
 		this.masternodeManager = dashContext.masternodeManager;
@@ -63,7 +69,7 @@ public final class MasternodeLoader extends AsyncTaskLoader<Integer>
 
 		masternodeSync.addEventListener(masternodeSyncListener, Threading.SAME_THREAD);
 		masternodeManager.addEventListener(masternodeManagerListener, Threading.SAME_THREAD);
-		//broadcastManager.registerReceiver(masternodeSyncReceiver, new IntentFilter(WalletApplication.ACTION_WALLET_REFERENCE_CHANGED));
+		broadcastManager.registerReceiver(masternodeSyncReceiver, new IntentFilter(WalletApplication.ACTION_WALLET_REFERENCE_CHANGED));
 
 		safeForceLoad();
 	}
@@ -71,10 +77,10 @@ public final class MasternodeLoader extends AsyncTaskLoader<Integer>
 	@Override
 	protected void onStopLoading()
 	{
-		//broadcastManager.unregisterReceiver(masternodeSyncReceiver);
+		broadcastManager.unregisterReceiver(masternodeSyncReceiver);
 		masternodeSync.removeEventListener(masternodeSyncListener);
 		masternodeManager.removeEventListener(masternodeManagerListener);
-		//masternodeSyncListener.removeCallbacks();
+//		masternodeSyncListener.removeCallbacks();
 
 		super.onStopLoading();
 	}
@@ -82,7 +88,7 @@ public final class MasternodeLoader extends AsyncTaskLoader<Integer>
 	@Override
 	protected void onReset()
 	{
-		//broadcastManager.unregisterReceiver(masternodeSyncReceiver);
+		broadcastManager.unregisterReceiver(masternodeSyncReceiver);
 		masternodeSync.removeEventListener(masternodeSyncListener);
 		masternodeManager.removeEventListener(masternodeManagerListener);
 		//masternodeSyncListener.removeCallbacks();
@@ -100,7 +106,7 @@ public final class MasternodeLoader extends AsyncTaskLoader<Integer>
 	private final MasternodeSyncListener masternodeSyncListener = new MasternodeSyncListener()
 	{
 		@Override
-		public void onSyncStatusChanged(int newStatus)
+		public void onSyncStatusChanged(int newStatus, double progress)
 		{
 			masternodeSyncStatus = newStatus;
 			safeForceLoad();
@@ -111,20 +117,19 @@ public final class MasternodeLoader extends AsyncTaskLoader<Integer>
 		@Override
 		public void onMasternodeCountChanged(int newCount)
 		{
-//			masternodeSyncStatus = newCount;
+			masternodeSyncStatus = newCount;
 			safeForceLoad();
 		}
 	};
-/*
+
 	private final BroadcastReceiver masternodeSyncReceiver = new BroadcastReceiver()
 	{
 		@Override
-		public void onReceive(final Context context, final Intent intent)
-		{
+		public void onReceive(Context context, Intent intent) {
 			safeForceLoad();
 		}
 	};
-*/
+
 	private void safeForceLoad()
 	{
 		try

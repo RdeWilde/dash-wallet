@@ -22,7 +22,6 @@
                 android:id="@+id/wallet_balance_btc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_dash_d_white_bottom"
                 android:layout_gravity="center_vertical"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -32,9 +31,10 @@
                 android:id="@+id/wallet_balance_local"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="center_vertical"
                 android:textColor="@color/white"
-                android:textSize="@dimen/font_size_tiny" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <ImageView

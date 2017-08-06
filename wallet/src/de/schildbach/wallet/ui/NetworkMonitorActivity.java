@@ -34,7 +34,7 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 {
 	private PeerListFragment peerListFragment;
 	private BlockListFragment blockListFragment;
-//	private MasternodeFragment masternodeFragment;
+	private MasternodeFragment masternodeFragment;
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState)
@@ -50,7 +50,7 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 		if (pager != null)
 		{
 			final ViewPagerTabs pagerTabs = (ViewPagerTabs) findViewById(R.id.network_monitor_pager_tabs);
-//			pagerTabs.addTabLabels(R.string.network_monitor_peer_list_title, R.string.network_monitor_block_list_title, R.string.network_monitor_masternodes_title);
+//			pagerTabs.addTabLabels(R.string.network_monitor_peer_list_title, R.string.network_monitor_block_list_title, R.string.network_monitor_masternodes_title);// TODO MN
 			pagerTabs.addTabLabels(R.string.network_monitor_peer_list_title, R.string.network_monitor_block_list_title);
 
 			final PagerAdapter pagerAdapter = new PagerAdapter(fm);
@@ -62,13 +62,13 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 
 			peerListFragment = new PeerListFragment();
 			blockListFragment = new BlockListFragment();
-//			masternodeFragment = new MasternodeFragment();
+//			masternodeFragment = new MasternodeFragment(); // TODO MN
 		}
 		else
 		{
 			peerListFragment = (PeerListFragment) fm.findFragmentById(R.id.peer_list_fragment);
 			blockListFragment = (BlockListFragment) fm.findFragmentById(R.id.block_list_fragment);
-//			masternodeFragment = (MasternodeFragment) fm.findFragmentById(R.id.masternode_fragment);
+//			masternodeFragment = (MasternodeFragment) fm.findFragmentById(R.id.masternode_fragment); // TODO MN
 		}
 
 		initToolbar();
@@ -104,7 +104,7 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 		@Override
 		public int getCount()
 		{
-//			return 3;
+//			return 3; // TODO MN
 			return 2;
 		}
 
@@ -113,9 +113,9 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 		{
 			if (position == 0)
 				return peerListFragment;
-			else //if(position == 1)
+			else //if(position == 1) // TODO MN
 				return blockListFragment;
-//			else
+//			else // TODO MN
 //				return masternodeFragment;
 		}
 	}

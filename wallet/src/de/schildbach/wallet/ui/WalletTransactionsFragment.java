@@ -312,7 +312,7 @@ public class WalletTransactionsFragment extends Fragment implements LoaderManage
 
 					case R.id.wallet_transactions_context_browse:
 						if (!txRotation)
-							startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.EXPLORE_BASE_URL + "tx/" + tx.getHashAsString())));
+							startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.EXPLORE_BASE_URL + Constants.EXPLORE_TRANSACTION_PATH + tx.getHashAsString())));
 						else
 							startActivity(new Intent(Intent.ACTION_VIEW, KEY_ROTATION_URI));
 						return true;

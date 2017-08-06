@@ -44,7 +44,7 @@ import de.schildbach.wallet.util.ThrottlingWalletChangeListener;
  */
 public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 {
-	//private LocalBroadcastManager broadcastManager;
+	private LocalBroadcastManager broadcastManager;
 	private final MasternodeSync masternodeSync;
 	private final MasternodeManager masternodeManager;
 	private int masternodeSyncStatus;
@@ -55,7 +55,7 @@ public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 	{
 		super(context);
 
-		//this.broadcastManager = LocalBroadcastManager.getInstance(context.getApplicationContext());
+		this.broadcastManager = LocalBroadcastManager.getInstance(context.getApplicationContext());
 		this.masternodeSync = wallet.getContext().masternodeSync;
 		this.masternodeSyncStatus = masternodeSync.getSyncStatusInt();
 		this.masternodeManager = wallet.getContext().masternodeManager;
@@ -65,7 +65,7 @@ public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 	{
 		super(context);
 
-		//this.broadcastManager = LocalBroadcastManager.getInstance(context.getApplicationContext());
+		this.broadcastManager = LocalBroadcastManager.getInstance(context.getApplicationContext());
 		this.masternodeSync = dashContext.masternodeSync;
 		this.masternodeSyncStatus = masternodeSync.getSyncStatusInt();
 		this.masternodeManager = dashContext.masternodeManager;
@@ -77,8 +77,8 @@ public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 		super.onStartLoading();
 
 		masternodeSync.addEventListener(masternodeSyncListener, Threading.SAME_THREAD);
-		//masternodeManager.addEventListener(masternodeManagerListener, Threading.SAME_THREAD);
-		//broadcastManager.registerReceiver(masternodeSyncReceiver, new IntentFilter(WalletApplication.ACTION_WALLET_REFERENCE_CHANGED));
+		masternodeManager.addEventListener(masternodeManagerListener, Threading.SAME_THREAD);
+		broadcastManager.registerReceiver(masternodeSyncReceiver, new IntentFilter(WalletApplication.ACTION_WALLET_REFERENCE_CHANGED));
 
 		safeForceLoad();
 	}
@@ -86,9 +86,9 @@ public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 	@Override
 	protected void onStopLoading()
 	{
-		//broadcastManager.unregisterReceiver(masternodeSyncReceiver);
+		broadcastManager.unregisterReceiver(masternodeSyncReceiver);
 		masternodeSync.removeEventListener(masternodeSyncListener);
-		//masternodeManager.removeEventListener(masternodeManagerListener);
+		masternodeManager.removeEventListener(masternodeManagerListener);
 		//masternodeSyncListener.removeCallbacks();
 
 		super.onStopLoading();
@@ -97,9 +97,9 @@ public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 	@Override
 	protected void onReset()
 	{
-		//broadcastManager.unregisterReceiver(masternodeSyncReceiver);
+		broadcastManager.unregisterReceiver(masternodeSyncReceiver);
 		masternodeSync.removeEventListener(masternodeSyncListener);
-		//masternodeSyncListener.removeCallbacks();
+//		masternodeSyncListener.removeCallbacks();
 
 		super.onReset();
 	}
@@ -114,7 +114,7 @@ public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 	private final MasternodeSyncListener masternodeSyncListener = new MasternodeSyncListener()
 	{
 		@Override
-		public void onSyncStatusChanged(int newStatus)
+		public void onSyncStatusChanged(int newStatus, double progress)
 		{
 			masternodeSyncStatus = newStatus;
 			safeForceLoad();
@@ -125,11 +125,11 @@ public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 		@Override
 		public void onMasternodeCountChanged(int newCount)
 		{
-			//masternodeSyncStatus = newStatus;
+//			masternodeSyncStatus = newStatus;
 			safeForceLoad();
 		}
 	};
-/*
+
 	private final BroadcastReceiver masternodeSyncReceiver = new BroadcastReceiver()
 	{
 		@Override
@@ -138,7 +138,7 @@ public final class MasternodeSyncLoader extends AsyncTaskLoader<Integer>
 			safeForceLoad();
 		}
 	};
-*/
+
 	private void safeForceLoad()
 	{
 		try

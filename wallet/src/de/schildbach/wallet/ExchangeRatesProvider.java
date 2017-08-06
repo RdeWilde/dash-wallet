@@ -20,6 +20,7 @@ package de.schildbach.wallet;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -28,6 +29,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Currency;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.Map;
@@ -576,23 +578,26 @@ public class ExchangeRatesProvider extends ContentProvider
 					final String currencyCode = data.getString("id");
 					if (currencyCode != null)
 					{
-							String rateStr = data.getString("price_btc");
+							String rateStr 		= data.getString("price_btc");
+							String rateUsdStr	= data.getString("price_usd");
 
 							if (rateStr != null)
 							{
 								try
 								{
 									double rateForBTC = Double.parseDouble(rateStr);
+									double rateForUSD = Double.parseDouble(rateUsdStr);
 
 									rateStr = String.format("%.8f", rateForBTC).replace(",", ".");
+									rateUsdStr = String.format("%.8f", rateForUSD).replace(",", ".");
 
-
-
-									final Fiat rate = Fiat.parseFiat(currencyCode, rateStr);
+									final Fiat rate = Fiat.parseFiat("BTC", rateStr);
+									final Fiat rateUsd = Fiat.parseFiat("USD", rateUsdStr);
 
 									if (rate.signum() > 0)
 									{
-										rates.put(currencyCode, new ExchangeRate(new org.bitcoinj.utils.ExchangeRate(rate), source));
+										rates.put("BTC", new ExchangeRate(new org.bitcoinj.utils.ExchangeRate(rate), source));
+										rates.put("USD", new ExchangeRate(new org.bitcoinj.utils.ExchangeRate(rateUsd), source));
 										break;
 									}
 								}
@@ -648,6 +653,7 @@ public class ExchangeRatesProvider extends ContentProvider
 
 		HttpURLConnection connection = null;
 		Reader reader = null;
+		int length	= 0;
 
 		try
 		{
@@ -684,17 +690,25 @@ public class ExchangeRatesProvider extends ContentProvider
 				if ("gzip".equalsIgnoreCase(contentEncoding))
 					is = new GZIPInputStream(is);
 
-				reader = new InputStreamReader(is, Charsets.UTF_8);
-				final StringBuilder content = new StringBuilder();
-				final long length = Io.copy(reader, content);
+//				reader = new InputStreamReader(is, Charsets.UTF_8);
+//				final StringBuilder content = new StringBuilder();
+//				final long length = Io.copy(reader, content);
+				BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
+				StringBuilder builder = new StringBuilder();
 
+				String inputString;
+				while ((inputString = bufferedReader.readLine()) != null) {
+					builder.append(inputString);
+				}
+
+				length = builder.length();
 				final Map<String, ExchangeRate> rates = new TreeMap<String, ExchangeRate>();
 
                 //Add Bitcoin information
                 //rates.put(CoinDefinition.cryptsyMarketCurrency, new ExchangeRate(CoinDefinition.cryptsyMarketCurrency, GenericUtils.toNanoCoins(String.format("%.8f", btcRate).replace(",", "."), 0), "pubapi.cryptsy.com"));
                 //rates.put("," + CoinDefinition.cryptsyMarketCurrency, new ExchangeRate(CoinDefinition.cryptsyMarketCurrency, GenericUtils.toNanoCoins(String.format("%.5f", btcRate*1000).replace(",", "."), 0), "pubapi.cryptsy.com"));
 
-				final JSONObject head = new JSONObject(content.toString());
+				final JSONObject head = new JSONObject(builder.toString());
 				for (final Iterator<String> i = head.keys(); i.hasNext();)
 				{
 					final String currencyCode = Strings.emptyToNull(i.next());
