@@ -4,13 +4,13 @@ repositories {
     maven { url localMavenRepo }
 }
 dependencies {
-    compile 'com.android.support:multidex:1.0.1'
-    compile(project(':integration-android')) {
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation(project(':integration-android')) {
         exclude(group: 'com.google.android', module: 'android')
     }
-    compile 'org.bitcoinj:ionj-core:0.13.5'
-    compile 'org.slf4j:slf4j-api:1.7.12'
-    compile 'net.sf.jopt-simple:jopt-simple:4.3'
+    implementation 'org.bitcoinj:ionj-core:0.13.5'
+    implementation 'org.slf4j:slf4j-api:1.7.12'
+    implementation 'net.sf.jopt-simple:jopt-simple:4.3'
 }
 
 // Load keystore
@@ -28,7 +28,7 @@ android {
         }
     }
     compileSdkVersion 23
-    buildToolsVersion '25.0.2'
+    buildToolsVersion '27.0.3'
     dexOptions {
         jumboMode true
     }

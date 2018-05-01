@@ -13,4 +13,5 @@ production/
 lib/
 out/
 *.iml
+*.log
 keystore.properties
